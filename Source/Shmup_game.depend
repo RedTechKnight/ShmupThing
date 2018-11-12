@@ -1,0 +1,1395 @@
+# depslib dependency file v1.0
+1541362795 source:c:\special\projects\game\shmup_game\audiosystem.cpp
+	"AudioSystem.h"
+
+1540815891 c:\special\projects\game\shmup_game\audiosystem.h
+	<SDL.h>
+	<SDL_mixer.h>
+	<iostream>
+	<fstream>
+	<string>
+	<map>
+	<deque>
+
+1519922081 c:\special\apis\sdl2-2.0.8\include\sdl.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_assert.h"
+	"SDL_atomic.h"
+	"SDL_audio.h"
+	"SDL_clipboard.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_filesystem.h"
+	"SDL_gamecontroller.h"
+	"SDL_haptic.h"
+	"SDL_hints.h"
+	"SDL_joystick.h"
+	"SDL_loadso.h"
+	"SDL_log.h"
+	"SDL_messagebox.h"
+	"SDL_mutex.h"
+	"SDL_power.h"
+	"SDL_render.h"
+	"SDL_rwops.h"
+	"SDL_shape.h"
+	"SDL_system.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_version.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1519922081 c:\special\apis\sdl2-2.0.8\include\sdl_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1519922081 c:\special\apis\sdl2-2.0.8\include\sdl_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<wchar.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<math.h>
+	<float.h>
+	<sal.h>
+	"begin_code.h"
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	"close_code.h"
+
+1539006091 c:\special\apis\sdl2-2.0.8\include\sdl_config.h
+	"SDL_platform.h"
+
+1519922081 c:\special\apis\sdl2-2.0.8\include\sdl_platform.h
+	"AvailabilityMacros.h"
+	"TargetConditionals.h"
+	<winapifamily.h>
+	"begin_code.h"
+	"close_code.h"
+
+1519922081 c:\special\apis\sdl2-2.0.8\include\begin_code.h
+
+1519922081 c:\special\apis\sdl2-2.0.8\include\close_code.h
+
+1519922081 c:\special\apis\sdl2-2.0.8\include\sdl_assert.h
+	"SDL_config.h"
+	"begin_code.h"
+	<signal.h>
+	"close_code.h"
+
+1519922081 c:\special\apis\sdl2-2.0.8\include\sdl_atomic.h
+	"SDL_stdinc.h"
+	"SDL_platform.h"
+	"begin_code.h"
+	<mbarrier.h>
+	"close_code.h"
+
+1519922081 c:\special\apis\sdl2-2.0.8\include\sdl_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1519922081 c:\special\apis\sdl2-2.0.8\include\sdl_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1519922081 c:\special\apis\sdl2-2.0.8\include\sdl_endian.h
+	"SDL_stdinc.h"
+	<endian.h>
+	"begin_code.h"
+	"close_code.h"
+
+1519922081 c:\special\apis\sdl2-2.0.8\include\sdl_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1519922081 c:\special\apis\sdl2-2.0.8\include\sdl_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_atomic.h"
+	"SDL_mutex.h"
+	"begin_code.h"
+	<process.h>
+	<process.h>
+	<stdlib.h>
+	"close_code.h"
+
+1519922081 c:\special\apis\sdl2-2.0.8\include\sdl_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1519922081 c:\special\apis\sdl2-2.0.8\include\sdl_clipboard.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1519922081 c:\special\apis\sdl2-2.0.8\include\sdl_cpuinfo.h
+	"SDL_stdinc.h"
+	<intrin.h>
+	<intrin.h>
+	<altivec.h>
+	<mm3dnow.h>
+	<immintrin.h>
+	<mmintrin.h>
+	<xmmintrin.h>
+	<emmintrin.h>
+	<pmmintrin.h>
+	"begin_code.h"
+	"close_code.h"
+
+1519922081 c:\special\apis\sdl2-2.0.8\include\sdl_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_quit.h"
+	"SDL_gesture.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1519922081 c:\special\apis\sdl2-2.0.8\include\sdl_video.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"begin_code.h"
+	"close_code.h"
+
+1519922081 c:\special\apis\sdl2-2.0.8\include\sdl_pixels.h
+	"SDL_stdinc.h"
+	"SDL_endian.h"
+	"begin_code.h"
+	"close_code.h"
+
+1519922081 c:\special\apis\sdl2-2.0.8\include\sdl_rect.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_pixels.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1519922081 c:\special\apis\sdl2-2.0.8\include\sdl_surface.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_blendmode.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1519922081 c:\special\apis\sdl2-2.0.8\include\sdl_blendmode.h
+	"begin_code.h"
+	"close_code.h"
+
+1519922081 c:\special\apis\sdl2-2.0.8\include\sdl_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keycode.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1519922081 c:\special\apis\sdl2-2.0.8\include\sdl_keycode.h
+	"SDL_stdinc.h"
+	"SDL_scancode.h"
+
+1519922081 c:\special\apis\sdl2-2.0.8\include\sdl_scancode.h
+	"SDL_stdinc.h"
+
+1519922081 c:\special\apis\sdl2-2.0.8\include\sdl_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1519922081 c:\special\apis\sdl2-2.0.8\include\sdl_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1519922081 c:\special\apis\sdl2-2.0.8\include\sdl_gamecontroller.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_rwops.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1519922081 c:\special\apis\sdl2-2.0.8\include\sdl_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1519922081 c:\special\apis\sdl2-2.0.8\include\sdl_gesture.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1519922082 c:\special\apis\sdl2-2.0.8\include\sdl_touch.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1519922081 c:\special\apis\sdl2-2.0.8\include\sdl_filesystem.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1519922081 c:\special\apis\sdl2-2.0.8\include\sdl_haptic.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1519922081 c:\special\apis\sdl2-2.0.8\include\sdl_hints.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1519922081 c:\special\apis\sdl2-2.0.8\include\sdl_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1519922081 c:\special\apis\sdl2-2.0.8\include\sdl_log.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1519922081 c:\special\apis\sdl2-2.0.8\include\sdl_messagebox.h
+	"SDL_stdinc.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1519922081 c:\special\apis\sdl2-2.0.8\include\sdl_power.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1519922081 c:\special\apis\sdl2-2.0.8\include\sdl_render.h
+	"SDL_stdinc.h"
+	"SDL_rect.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1519922081 c:\special\apis\sdl2-2.0.8\include\sdl_shape.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1519922081 c:\special\apis\sdl2-2.0.8\include\sdl_system.h
+	"SDL_stdinc.h"
+	"SDL_keyboard.h"
+	"SDL_render.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1519922081 c:\special\apis\sdl2-2.0.8\include\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1519922081 c:\special\apis\sdl2-2.0.8\include\sdl_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1508772699 c:\special\apis\sdl2_mixer-2.0.2\sdl_mixer.h
+	"SDL_stdinc.h"
+	"SDL_rwops.h"
+	"SDL_audio.h"
+	"SDL_endian.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1539686586 source:c:\special\projects\game\shmup_game\collision.cpp
+	"collision.h"
+
+1539679237 c:\special\projects\game\shmup_game\collision.h
+	<glm.hpp>
+	<ext/matrix_transform.hpp>
+	<ext/scalar_constants.hpp>
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\glm.hpp
+	"detail/_fixes.hpp"
+	"detail/setup.hpp"
+	<cmath>
+	<climits>
+	<cfloat>
+	<limits>
+	<cassert>
+	"fwd.hpp"
+	"vec2.hpp"
+	"vec3.hpp"
+	"vec4.hpp"
+	"mat2x2.hpp"
+	"mat2x3.hpp"
+	"mat2x4.hpp"
+	"mat3x2.hpp"
+	"mat3x3.hpp"
+	"mat3x4.hpp"
+	"mat4x2.hpp"
+	"mat4x3.hpp"
+	"mat4x4.hpp"
+	"trigonometric.hpp"
+	"exponential.hpp"
+	"common.hpp"
+	"packing.hpp"
+	"geometric.hpp"
+	"matrix.hpp"
+	"vector_relational.hpp"
+	"integer.hpp"
+
+1535531570 c:\special\apis\glm-0.9.9.2\glm\glm\detail\_fixes.hpp
+	<cmath>
+
+1536584214 c:\special\apis\glm-0.9.9.2\glm\glm\detail\setup.hpp
+	<cassert>
+	<cstddef>
+	"../simd/platform.h"
+	<cstdint>
+	<type_traits>
+
+1535531570 c:\special\apis\glm-0.9.9.2\glm\glm\simd\platform.h
+	<cuda.h>
+	<immintrin.h>
+	<immintrin.h>
+	<popcntintrin.h>
+	<nmmintrin.h>
+	<smmintrin.h>
+	<tmmintrin.h>
+	<pmmintrin.h>
+	<emmintrin.h>
+
+1535531570 c:\special\apis\glm-0.9.9.2\glm\glm\fwd.hpp
+	"detail/qualifier.hpp"
+
+1535531570 c:\special\apis\glm-0.9.9.2\glm\glm\detail\qualifier.hpp
+	"setup.hpp"
+
+1533818823 c:\special\apis\glm-0.9.9.2\glm\glm\vec2.hpp
+	"./ext/vector_bool2.hpp"
+	"./ext/vector_bool2_precision.hpp"
+	"./ext/vector_float2.hpp"
+	"./ext/vector_float2_precision.hpp"
+	"./ext/vector_double2.hpp"
+	"./ext/vector_double2_precision.hpp"
+	"./ext/vector_int2.hpp"
+	"./ext/vector_int2_precision.hpp"
+	"./ext/vector_uint2.hpp"
+	"./ext/vector_uint2_precision.hpp"
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\vector_bool2.hpp
+	"../detail/type_vec2.hpp"
+
+1533818822 c:\special\apis\glm-0.9.9.2\glm\glm\detail\type_vec2.hpp
+	"qualifier.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec2.inl"
+
+1535531570 c:\special\apis\glm-0.9.9.2\glm\glm\detail\_swizzle.hpp
+
+1535531570 c:\special\apis\glm-0.9.9.2\glm\glm\detail\_swizzle_func.hpp
+
+1536584325 c:\special\apis\glm-0.9.9.2\glm\glm\detail\type_vec2.inl
+	"./compute_vector_relational.hpp"
+
+1533818821 c:\special\apis\glm-0.9.9.2\glm\glm\detail\compute_vector_relational.hpp
+	"setup.hpp"
+	<limits>
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\vector_bool2_precision.hpp
+	"../detail/type_vec2.hpp"
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\vector_float2.hpp
+	"../detail/type_vec2.hpp"
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\vector_float2_precision.hpp
+	"../detail/type_vec2.hpp"
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\vector_double2.hpp
+	"../detail/type_vec2.hpp"
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\vector_double2_precision.hpp
+	"../detail/type_vec2.hpp"
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\vector_int2.hpp
+	"../detail/type_vec2.hpp"
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\vector_int2_precision.hpp
+	"../detail/type_vec2.hpp"
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\vector_uint2.hpp
+	"../detail/type_vec2.hpp"
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\vector_uint2_precision.hpp
+	"../detail/type_vec2.hpp"
+
+1533818823 c:\special\apis\glm-0.9.9.2\glm\glm\vec3.hpp
+	"./ext/vector_bool3.hpp"
+	"./ext/vector_bool3_precision.hpp"
+	"./ext/vector_float3.hpp"
+	"./ext/vector_float3_precision.hpp"
+	"./ext/vector_double3.hpp"
+	"./ext/vector_double3_precision.hpp"
+	"./ext/vector_int3.hpp"
+	"./ext/vector_int3_precision.hpp"
+	"./ext/vector_uint3.hpp"
+	"./ext/vector_uint3_precision.hpp"
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\vector_bool3.hpp
+	"../detail/type_vec3.hpp"
+
+1533818822 c:\special\apis\glm-0.9.9.2\glm\glm\detail\type_vec3.hpp
+	"qualifier.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec3.inl"
+
+1536584292 c:\special\apis\glm-0.9.9.2\glm\glm\detail\type_vec3.inl
+	"compute_vector_relational.hpp"
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\vector_bool3_precision.hpp
+	"../detail/type_vec3.hpp"
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\vector_float3.hpp
+	"../detail/type_vec3.hpp"
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\vector_float3_precision.hpp
+	"../detail/type_vec3.hpp"
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\vector_double3.hpp
+	"../detail/type_vec3.hpp"
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\vector_double3_precision.hpp
+	"../detail/type_vec3.hpp"
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\vector_int3.hpp
+	"../detail/type_vec3.hpp"
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\vector_int3_precision.hpp
+	"../detail/type_vec3.hpp"
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\vector_uint3.hpp
+	"../detail/type_vec3.hpp"
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\vector_uint3_precision.hpp
+	"../detail/type_vec3.hpp"
+
+1533818823 c:\special\apis\glm-0.9.9.2\glm\glm\vec4.hpp
+	"./ext/vector_bool4.hpp"
+	"./ext/vector_bool4_precision.hpp"
+	"./ext/vector_float4.hpp"
+	"./ext/vector_float4_precision.hpp"
+	"./ext/vector_double4.hpp"
+	"./ext/vector_double4_precision.hpp"
+	"./ext/vector_int4.hpp"
+	"./ext/vector_int4_precision.hpp"
+	"./ext/vector_uint4.hpp"
+	"./ext/vector_uint4_precision.hpp"
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\vector_bool4.hpp
+	"../detail/type_vec4.hpp"
+
+1533818822 c:\special\apis\glm-0.9.9.2\glm\glm\detail\type_vec4.hpp
+	"qualifier.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec4.inl"
+
+1536584234 c:\special\apis\glm-0.9.9.2\glm\glm\detail\type_vec4.inl
+	"compute_vector_relational.hpp"
+	"type_vec4_simd.inl"
+
+1535531570 c:\special\apis\glm-0.9.9.2\glm\glm\detail\type_vec4_simd.inl
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\vector_bool4_precision.hpp
+	"../detail/type_vec4.hpp"
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\vector_float4.hpp
+	"../detail/type_vec4.hpp"
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\vector_float4_precision.hpp
+	"../detail/type_vec4.hpp"
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\vector_double4.hpp
+	"../detail/type_vec4.hpp"
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\vector_double4_precision.hpp
+	"../detail/setup.hpp"
+	"../detail/type_vec4.hpp"
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\vector_int4.hpp
+	"../detail/type_vec4.hpp"
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\vector_int4_precision.hpp
+	"../detail/type_vec4.hpp"
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\vector_uint4.hpp
+	"../detail/type_vec4.hpp"
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\vector_uint4_precision.hpp
+	"../detail/type_vec4.hpp"
+
+1533818822 c:\special\apis\glm-0.9.9.2\glm\glm\mat2x2.hpp
+	"./ext/matrix_double2x2.hpp"
+	"./ext/matrix_double2x2_precision.hpp"
+	"./ext/matrix_float2x2.hpp"
+	"./ext/matrix_float2x2_precision.hpp"
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\matrix_double2x2.hpp
+	"../detail/type_mat2x2.hpp"
+
+1533818822 c:\special\apis\glm-0.9.9.2\glm\glm\detail\type_mat2x2.hpp
+	"type_vec2.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x2.inl"
+
+1535531570 c:\special\apis\glm-0.9.9.2\glm\glm\detail\type_mat2x2.inl
+	"../matrix.hpp"
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\matrix.hpp
+	"detail/qualifier.hpp"
+	"detail/setup.hpp"
+	"vec2.hpp"
+	"vec3.hpp"
+	"vec4.hpp"
+	"mat2x2.hpp"
+	"mat2x3.hpp"
+	"mat2x4.hpp"
+	"mat3x2.hpp"
+	"mat3x3.hpp"
+	"mat3x4.hpp"
+	"mat4x2.hpp"
+	"mat4x3.hpp"
+	"mat4x4.hpp"
+	"detail/func_matrix.inl"
+
+1533818822 c:\special\apis\glm-0.9.9.2\glm\glm\mat2x3.hpp
+	"./ext/matrix_double2x3.hpp"
+	"./ext/matrix_double2x3_precision.hpp"
+	"./ext/matrix_float2x3.hpp"
+	"./ext/matrix_float2x3_precision.hpp"
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\matrix_double2x3.hpp
+	"../detail/type_mat2x3.hpp"
+
+1533818822 c:\special\apis\glm-0.9.9.2\glm\glm\detail\type_mat2x3.hpp
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x3.inl"
+
+1535531570 c:\special\apis\glm-0.9.9.2\glm\glm\detail\type_mat2x3.inl
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\matrix_double2x3_precision.hpp
+	"../detail/type_mat2x3.hpp"
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\matrix_float2x3.hpp
+	"../detail/type_mat2x3.hpp"
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\matrix_float2x3_precision.hpp
+	"../detail/type_mat2x3.hpp"
+
+1533818822 c:\special\apis\glm-0.9.9.2\glm\glm\mat2x4.hpp
+	"./ext/matrix_double2x4.hpp"
+	"./ext/matrix_double2x4_precision.hpp"
+	"./ext/matrix_float2x4.hpp"
+	"./ext/matrix_float2x4_precision.hpp"
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\matrix_double2x4.hpp
+	"../detail/type_mat2x4.hpp"
+
+1533818822 c:\special\apis\glm-0.9.9.2\glm\glm\detail\type_mat2x4.hpp
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x4.inl"
+
+1535531570 c:\special\apis\glm-0.9.9.2\glm\glm\detail\type_mat2x4.inl
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\matrix_double2x4_precision.hpp
+	"../detail/type_mat2x4.hpp"
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\matrix_float2x4.hpp
+	"../detail/type_mat2x4.hpp"
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\matrix_float2x4_precision.hpp
+	"../detail/type_mat2x4.hpp"
+
+1533818822 c:\special\apis\glm-0.9.9.2\glm\glm\mat3x2.hpp
+	"./ext/matrix_double3x2.hpp"
+	"./ext/matrix_double3x2_precision.hpp"
+	"./ext/matrix_float3x2.hpp"
+	"./ext/matrix_float3x2_precision.hpp"
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\matrix_double3x2.hpp
+	"../detail/type_mat3x2.hpp"
+
+1533818822 c:\special\apis\glm-0.9.9.2\glm\glm\detail\type_mat3x2.hpp
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x2.inl"
+
+1535531570 c:\special\apis\glm-0.9.9.2\glm\glm\detail\type_mat3x2.inl
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\matrix_double3x2_precision.hpp
+	"../detail/type_mat3x2.hpp"
+
+1535531570 c:\special\apis\glm-0.9.9.2\glm\glm\ext\matrix_float3x2.hpp
+	"../detail/type_mat3x2.hpp"
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\matrix_float3x2_precision.hpp
+	"../detail/type_mat3x2.hpp"
+
+1533818822 c:\special\apis\glm-0.9.9.2\glm\glm\mat3x3.hpp
+	"./ext/matrix_double3x3.hpp"
+	"./ext/matrix_double3x3_precision.hpp"
+	"./ext/matrix_float3x3.hpp"
+	"./ext/matrix_float3x3_precision.hpp"
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\matrix_double3x3.hpp
+	"../detail/type_mat3x3.hpp"
+
+1533818822 c:\special\apis\glm-0.9.9.2\glm\glm\detail\type_mat3x3.hpp
+	"type_vec3.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x3.inl"
+
+1535531570 c:\special\apis\glm-0.9.9.2\glm\glm\detail\type_mat3x3.inl
+	"../matrix.hpp"
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\matrix_double3x3_precision.hpp
+	"../detail/type_mat3x3.hpp"
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\matrix_float3x3.hpp
+	"../detail/type_mat3x3.hpp"
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\matrix_float3x3_precision.hpp
+	"../detail/type_mat3x3.hpp"
+
+1533818822 c:\special\apis\glm-0.9.9.2\glm\glm\mat3x4.hpp
+	"./ext/matrix_double3x4.hpp"
+	"./ext/matrix_double3x4_precision.hpp"
+	"./ext/matrix_float3x4.hpp"
+	"./ext/matrix_float3x4_precision.hpp"
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\matrix_double3x4.hpp
+	"../detail/type_mat3x4.hpp"
+
+1533818822 c:\special\apis\glm-0.9.9.2\glm\glm\detail\type_mat3x4.hpp
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x4.inl"
+
+1535531570 c:\special\apis\glm-0.9.9.2\glm\glm\detail\type_mat3x4.inl
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\matrix_double3x4_precision.hpp
+	"../detail/type_mat3x4.hpp"
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\matrix_float3x4.hpp
+	"../detail/type_mat3x4.hpp"
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\matrix_float3x4_precision.hpp
+	"../detail/type_mat3x4.hpp"
+
+1533818822 c:\special\apis\glm-0.9.9.2\glm\glm\mat4x2.hpp
+	"./ext/matrix_double4x2.hpp"
+	"./ext/matrix_double4x2_precision.hpp"
+	"./ext/matrix_float4x2.hpp"
+	"./ext/matrix_float4x2_precision.hpp"
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\matrix_double4x2.hpp
+	"../detail/type_mat4x2.hpp"
+
+1533818822 c:\special\apis\glm-0.9.9.2\glm\glm\detail\type_mat4x2.hpp
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x2.inl"
+
+1535531570 c:\special\apis\glm-0.9.9.2\glm\glm\detail\type_mat4x2.inl
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\matrix_double4x2_precision.hpp
+	"../detail/type_mat4x2.hpp"
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\matrix_float4x2.hpp
+	"../detail/type_mat4x2.hpp"
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\matrix_float4x2_precision.hpp
+	"../detail/type_mat2x2.hpp"
+
+1533818822 c:\special\apis\glm-0.9.9.2\glm\glm\mat4x3.hpp
+	"./ext/matrix_double4x3.hpp"
+	"./ext/matrix_double4x3_precision.hpp"
+	"./ext/matrix_float4x3.hpp"
+	"./ext/matrix_float4x3_precision.hpp"
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\matrix_double4x3.hpp
+	"../detail/type_mat4x3.hpp"
+
+1533818822 c:\special\apis\glm-0.9.9.2\glm\glm\detail\type_mat4x3.hpp
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x3.inl"
+
+1535531570 c:\special\apis\glm-0.9.9.2\glm\glm\detail\type_mat4x3.inl
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\matrix_double4x3_precision.hpp
+	"../detail/type_mat4x3.hpp"
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\matrix_float4x3.hpp
+	"../detail/type_mat4x3.hpp"
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\matrix_float4x3_precision.hpp
+	"../detail/type_mat4x3.hpp"
+
+1533818822 c:\special\apis\glm-0.9.9.2\glm\glm\mat4x4.hpp
+	"./ext/matrix_double4x4.hpp"
+	"./ext/matrix_double4x4_precision.hpp"
+	"./ext/matrix_float4x4.hpp"
+	"./ext/matrix_float4x4_precision.hpp"
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\matrix_double4x4.hpp
+	"../detail/type_mat4x4.hpp"
+
+1533818822 c:\special\apis\glm-0.9.9.2\glm\glm\detail\type_mat4x4.hpp
+	"type_vec4.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x4.inl"
+
+1535531570 c:\special\apis\glm-0.9.9.2\glm\glm\detail\type_mat4x4.inl
+	"../matrix.hpp"
+	"type_mat4x4_simd.inl"
+
+1533818822 c:\special\apis\glm-0.9.9.2\glm\glm\detail\type_mat4x4_simd.inl
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\matrix_double4x4_precision.hpp
+	"../detail/type_mat4x4.hpp"
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\matrix_float4x4.hpp
+	"../detail/type_mat4x4.hpp"
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\matrix_float4x4_precision.hpp
+	"../detail/type_mat4x4.hpp"
+
+1535531570 c:\special\apis\glm-0.9.9.2\glm\glm\detail\func_matrix.inl
+	"../geometric.hpp"
+	<limits>
+	"func_matrix_simd.inl"
+
+1535535512 c:\special\apis\glm-0.9.9.2\glm\glm\geometric.hpp
+	"detail/type_vec3.hpp"
+	"detail/func_geometric.inl"
+
+1535531570 c:\special\apis\glm-0.9.9.2\glm\glm\detail\func_geometric.inl
+	"../exponential.hpp"
+	"../common.hpp"
+	"func_geometric_simd.inl"
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\exponential.hpp
+	"detail/type_vec1.hpp"
+	"detail/type_vec2.hpp"
+	"detail/type_vec3.hpp"
+	"detail/type_vec4.hpp"
+	<cmath>
+	"detail/func_exponential.inl"
+
+1533818822 c:\special\apis\glm-0.9.9.2\glm\glm\detail\type_vec1.hpp
+	"qualifier.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec1.inl"
+
+1536584333 c:\special\apis\glm-0.9.9.2\glm\glm\detail\type_vec1.inl
+	"./compute_vector_relational.hpp"
+
+1533818821 c:\special\apis\glm-0.9.9.2\glm\glm\detail\func_exponential.inl
+	"../vector_relational.hpp"
+	"_vectorize.hpp"
+	<limits>
+	<cmath>
+	<cassert>
+	"func_exponential_simd.inl"
+
+1535535285 c:\special\apis\glm-0.9.9.2\glm\glm\vector_relational.hpp
+	"detail/qualifier.hpp"
+	"detail/setup.hpp"
+	"detail/func_vector_relational.inl"
+
+1535531570 c:\special\apis\glm-0.9.9.2\glm\glm\detail\func_vector_relational.inl
+	"func_vector_relational_simd.inl"
+
+1535531570 c:\special\apis\glm-0.9.9.2\glm\glm\detail\func_vector_relational_simd.inl
+
+1535531570 c:\special\apis\glm-0.9.9.2\glm\glm\detail\_vectorize.hpp
+
+1533818821 c:\special\apis\glm-0.9.9.2\glm\glm\detail\func_exponential_simd.inl
+	"../simd/exponential.h"
+
+1531731968 c:\special\apis\glm-0.9.9.2\glm\glm\simd\exponential.h
+	"platform.h"
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\common.hpp
+	"detail/qualifier.hpp"
+	"detail/_fixes.hpp"
+	"detail/func_common.inl"
+
+1535615770 c:\special\apis\glm-0.9.9.2\glm\glm\detail\func_common.inl
+	"../vector_relational.hpp"
+	"compute_common.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"_vectorize.hpp"
+	<limits>
+	"func_common_simd.inl"
+
+1535615770 c:\special\apis\glm-0.9.9.2\glm\glm\detail\compute_common.hpp
+	"setup.hpp"
+	<limits>
+
+1535531570 c:\special\apis\glm-0.9.9.2\glm\glm\detail\func_common_simd.inl
+	"../simd/common.h"
+	<immintrin.h>
+
+1531731968 c:\special\apis\glm-0.9.9.2\glm\glm\simd\common.h
+	"platform.h"
+
+1525695782 c:\special\apis\glm-0.9.9.2\glm\glm\detail\func_geometric_simd.inl
+	"../simd/geometric.h"
+
+1525695782 c:\special\apis\glm-0.9.9.2\glm\glm\simd\geometric.h
+	"common.h"
+
+1535531570 c:\special\apis\glm-0.9.9.2\glm\glm\detail\func_matrix_simd.inl
+	"type_mat4x4.hpp"
+	"../geometric.hpp"
+	"../simd/matrix.h"
+	<cstring>
+
+1525695782 c:\special\apis\glm-0.9.9.2\glm\glm\simd\matrix.h
+	"geometric.h"
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\matrix_double2x2_precision.hpp
+	"../detail/type_mat2x2.hpp"
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\matrix_float2x2.hpp
+	"../detail/type_mat2x2.hpp"
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\matrix_float2x2_precision.hpp
+	"../detail/type_mat2x2.hpp"
+
+1535535316 c:\special\apis\glm-0.9.9.2\glm\glm\trigonometric.hpp
+	"detail/setup.hpp"
+	"detail/qualifier.hpp"
+	"detail/func_trigonometric.inl"
+
+1535531570 c:\special\apis\glm-0.9.9.2\glm\glm\detail\func_trigonometric.inl
+	"_vectorize.hpp"
+	<cmath>
+	<limits>
+	"func_trigonometric_simd.inl"
+
+1464685461 c:\special\apis\glm-0.9.9.2\glm\glm\detail\func_trigonometric_simd.inl
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\packing.hpp
+	"./ext/vector_uint2.hpp"
+	"./ext/vector_float2.hpp"
+	"./ext/vector_float4.hpp"
+	"detail/func_packing.inl"
+
+1535531570 c:\special\apis\glm-0.9.9.2\glm\glm\detail\func_packing.inl
+	"../common.hpp"
+	"type_half.hpp"
+	"func_packing_simd.inl"
+
+1535531570 c:\special\apis\glm-0.9.9.2\glm\glm\detail\type_half.hpp
+	"setup.hpp"
+	"type_half.inl"
+
+1535531570 c:\special\apis\glm-0.9.9.2\glm\glm\detail\type_half.inl
+
+1535531570 c:\special\apis\glm-0.9.9.2\glm\glm\detail\func_packing_simd.inl
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\integer.hpp
+	"detail/qualifier.hpp"
+	"common.hpp"
+	"vector_relational.hpp"
+	"detail/func_integer.inl"
+
+1535531570 c:\special\apis\glm-0.9.9.2\glm\glm\detail\func_integer.inl
+	"_vectorize.hpp"
+	<intrin.h>
+	<limits>
+	"func_integer_simd.inl"
+
+1535531570 c:\special\apis\glm-0.9.9.2\glm\glm\detail\func_integer_simd.inl
+	"../simd/integer.h"
+
+1525695782 c:\special\apis\glm-0.9.9.2\glm\glm\simd\integer.h
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\matrix_transform.hpp
+	"../gtc/constants.hpp"
+	"../geometric.hpp"
+	"../trigonometric.hpp"
+	"../matrix.hpp"
+	"matrix_transform.inl"
+
+1535531570 c:\special\apis\glm-0.9.9.2\glm\glm\gtc\constants.hpp
+	"../ext/scalar_constants.hpp"
+	"constants.inl"
+
+1535966586 c:\special\apis\glm-0.9.9.2\glm\glm\ext\scalar_constants.hpp
+	"../detail/setup.hpp"
+	"scalar_constants.inl"
+
+1535531570 c:\special\apis\glm-0.9.9.2\glm\glm\ext\scalar_constants.inl
+	<limits>
+
+1535531570 c:\special\apis\glm-0.9.9.2\glm\glm\gtc\constants.inl
+
+1535531570 c:\special\apis\glm-0.9.9.2\glm\glm\ext\matrix_transform.inl
+
+1541336717 source:c:\special\projects\game\shmup_game\cursor.cpp
+	"Cursor.h"
+
+1541336366 c:\special\projects\game\shmup_game\cursor.h
+
+1541408127 source:c:\special\projects\game\shmup_game\dragon_sdlgl.cpp
+	"dragon_sdlgl.h"
+
+1541408148 c:\special\projects\game\shmup_game\dragon_sdlgl.h
+	<SDL.h>
+	<gl/glew.h>
+	<SDL_opengl.h>
+	<GL/glu.h>
+	<memory>
+	<map>
+	<vector>
+	<iostream>
+	<SDL_ttf.h>
+
+1539002748 c:\special\apis\glew\include\gl\glew.h
+	<stddef.h>
+	<inttypes.h>
+	<stdint.h>
+	<inttypes.h>
+	<Availability.h>
+	<OpenGL/glu.h>
+	<GL/glu.h>
+
+1519922081 c:\special\apis\sdl2-2.0.8\include\sdl_opengl.h
+	"SDL_config.h"
+	"gl_mangle.h"
+	<windows.h>
+	"SDL_opengl_glext.h"
+
+1519922081 c:\special\apis\sdl2-2.0.8\include\sdl_opengl_glext.h
+	<windows.h>
+	<stddef.h>
+	<inttypes.h>
+	<inttypes.h>
+	<inttypes.h>
+	<stdint.h>
+	<stdint.h>
+	<inttypes.h>
+
+1539086088 c:\special\apis\sdl2_ttf-2.0.14\sdl_ttf.h
+	"SDL.h"
+	"begin_code.h"
+	"close_code.h"
+
+1541603200 source:c:\special\projects\game\shmup_game\enemy.cpp
+	"Enemy.h"
+
+1541601102 c:\special\projects\game\shmup_game\enemy.h
+	<list>
+	"ship.h"
+
+1541412351 c:\special\projects\game\shmup_game\ship.h
+	<vector>
+	<memory>
+	<map>
+	<queue>
+	<glm.hpp>
+	<ext/matrix_transform.hpp>
+	<ext/scalar_constants.hpp>
+	<string>
+	"collision.h"
+	"Projectile.h"
+	"GameEvent.h"
+
+1541590004 c:\special\projects\game\shmup_game\projectile.h
+	<vector>
+	<list>
+	<array>
+	<exception>
+	<algorithm>
+	<iostream>
+	<glm.hpp>
+	<ext/matrix_transform.hpp>
+	<ext/scalar_constants.hpp>
+	"collision.h"
+	"Light.h"
+
+1541536412 c:\special\projects\game\shmup_game\light.h
+	<vector>
+	<list>
+	<memory>
+	<map>
+	<queue>
+	<glm.hpp>
+	<ext/matrix_transform.hpp>
+	<ext/scalar_constants.hpp>
+	<string>
+	<array>
+	<GL/glew.h>
+
+1541424187 c:\special\projects\game\shmup_game\gameevent.h
+	<queue>
+	<any>
+	<list>
+
+1541668165 source:c:\special\projects\game\shmup_game\enemymanager.cpp
+	"EnemyManager.h"
+
+1541517328 c:\special\projects\game\shmup_game\enemymanager.h
+	<memory>
+	<iostream>
+	"Enemy.h"
+	"GameEvent.h"
+	"Particles.h"
+
+1541571111 c:\special\projects\game\shmup_game\particles.h
+	<vector>
+	<glm.hpp>
+	<ext/matrix_transform.hpp>
+	<ext/scalar_constants.hpp>
+	<gtc/random.hpp>
+	<iostream>
+	<math.h>
+	<random>
+	<functional>
+	<list>
+	<algorithm>
+	"GL_Model.h"
+	"GL_Texture.h"
+	"Light.h"
+	<map>
+
+1535531570 c:\special\apis\glm-0.9.9.2\glm\glm\gtc\random.hpp
+	"../ext/scalar_int_sized.hpp"
+	"../ext/scalar_uint_sized.hpp"
+	"../detail/qualifier.hpp"
+	"random.inl"
+
+1535531570 c:\special\apis\glm-0.9.9.2\glm\glm\ext\scalar_int_sized.hpp
+	"../detail/setup.hpp"
+
+1535531570 c:\special\apis\glm-0.9.9.2\glm\glm\ext\scalar_uint_sized.hpp
+	"../detail/setup.hpp"
+
+1535531570 c:\special\apis\glm-0.9.9.2\glm\glm\gtc\random.inl
+	"../geometric.hpp"
+	"../exponential.hpp"
+	"../trigonometric.hpp"
+	"../detail/type_vec1.hpp"
+	<cstdlib>
+	<ctime>
+	<cassert>
+	<cmath>
+
+1541443139 c:\special\projects\game\shmup_game\gl_model.h
+	"Dragon_SDLGL.h"
+	<algorithm>
+	<vector>
+	<stack>
+	<assimp/Importer.hpp>
+	<assimp/scene.h>
+	<assimp/postprocess.h>
+
+1540886156 c:\special\projects\game\shmup_game\gl_texture.h
+	"Dragon_SDLGL.h"
+	<FreeImage.h>
+
+1524334720 c:\special\apis\freeimage\dist\x64\freeimage.h
+	<wchar.h>
+	<inttypes.h>
+
+1541515130 source:c:\special\projects\game\shmup_game\enemyspawner.cpp
+	"EnemySpawner.h"
+
+1541513954 c:\special\projects\game\shmup_game\enemyspawner.h
+	"Enemy.h"
+
+1541603106 source:c:\special\projects\game\shmup_game\game.cpp
+	"Game.h"
+
+1541579010 c:\special\projects\game\shmup_game\game.h
+	<string>
+	<iostream>
+	"Dragon_SDLGL.h"
+	"GL_ProgramManager.h"
+	"GL_Texture.h"
+	"GL_Model.h"
+	<glm.hpp>
+	<SDL_mixer.h>
+	<SDL_ttf.h>
+	<string>
+	"AudioSystem.h"
+	"GLCamera.h"
+	"GLTextRenderer.h"
+	"ship.h"
+	"Player.h"
+	"Enemy.h"
+	"Input.h"
+	"Level.h"
+	"GLModelManager.h"
+	"GameEvent.h"
+	"AudioSystem.h"
+	"ResourceLoader.h"
+	"EnemyManager.h"
+	"Particles.h"
+	"Light.h"
+	"GL2DElement.h"
+	"Cursor.h"
+	"GL2DElementArray.h"
+	"GUIElement.h"
+	"GUIButton.h"
+	"GUICheckBox.h"
+	"GLText.h"
+	"GLProjectileRenderer.h"
+
+1541405052 c:\special\projects\game\shmup_game\gl_programmanager.h
+	"Dragon_SDLGL.h"
+	<list>
+	<map>
+	<vector>
+	<string>
+	<fstream>
+
+1539508883 c:\special\projects\game\shmup_game\glcamera.h
+	<glm.hpp>
+	<ext/matrix_transform.hpp>
+	<ext/scalar_constants.hpp>
+
+1541182777 c:\special\projects\game\shmup_game\gltextrenderer.h
+
+1541422983 c:\special\projects\game\shmup_game\player.h
+	"ship.h"
+
+1541408355 c:\special\projects\game\shmup_game\input.h
+	"Dragon_SDLGL.h"
+	<map>
+
+1540224497 c:\special\projects\game\shmup_game\level.h
+	<vector>
+	"Enemy.h"
+	"GL_Model.h"
+	<glm.hpp>
+	<ext/matrix_transform.hpp>
+	<ext/scalar_constants.hpp>
+	<fstream>
+	<istream>
+	<iostream>
+
+1541443367 c:\special\projects\game\shmup_game\glmodelmanager.h
+	"GL_Model.h"
+	<map>
+	<fstream>
+	<istream>
+	<iostream>
+
+1540206539 c:\special\projects\game\shmup_game\resourceloader.h
+	<vector>
+	<memory>
+	<map>
+	<queue>
+	<glm.hpp>
+	<ext/matrix_transform.hpp>
+	<ext/scalar_constants.hpp>
+	<fstream>
+	<istream>
+	<string>
+	"ship.h"
+	"collision.h"
+	"Enemy.h"
+	"EnemyManager.h"
+
+1540984677 c:\special\projects\game\shmup_game\gl2delement.h
+	<array>
+	"GL_Texture.h"
+
+1541270384 c:\special\projects\game\shmup_game\gl2delementarray.h
+	<array>
+	"Dragon_SDLGL.h"
+	<FreeImage.h>
+	<memory>
+
+1541338598 c:\special\projects\game\shmup_game\guielement.h
+	<memory>
+	<map>
+
+1541256077 c:\special\projects\game\shmup_game\guibutton.h
+	<iostream>
+	<functional>
+	"GUIElement.h"
+
+1541340217 c:\special\projects\game\shmup_game\guicheckbox.h
+	<iostream>
+	"GUIElement.h"
+
+1541336160 c:\special\projects\game\shmup_game\gltext.h
+	<array>
+	<SDL_ttf.h>
+	"Dragon_SDLGL.h"
+
+1541576463 c:\special\projects\game\shmup_game\glprojectilerenderer.h
+	"GL_Texture.h"
+	"GL_Model.h"
+
+1541422815 source:c:\special\projects\game\shmup_game\gameevent.cpp
+	"GameEvent.h"
+
+1541338242 source:c:\special\projects\game\shmup_game\gl2delement.cpp
+	"GL2DElement.h"
+
+1541335418 source:c:\special\projects\game\shmup_game\gl2delementarray.cpp
+	"GL2DElementArray.h"
+
+1541452018 source:c:\special\projects\game\shmup_game\gl_model.cpp
+	"GL_Model.h"
+
+1541405185 source:c:\special\projects\game\shmup_game\gl_programmanager.cpp
+	"GL_ProgramManager.h"
+
+1541488691 source:c:\special\projects\game\shmup_game\gl_texture.cpp
+	"GL_Texture.h"
+
+1539510546 source:c:\special\projects\game\shmup_game\glcamera.cpp
+	"GLCamera.h"
+
+1541452018 source:c:\special\projects\game\shmup_game\glmodelmanager.cpp
+	"GLModelManager.h"
+
+1541182757 source:c:\special\projects\game\shmup_game\glmultilinetext.cpp
+	"GLMultilineText.h"
+
+1541182706 c:\special\projects\game\shmup_game\glmultilinetext.h
+	<SDL_ttf.h>
+	"GL_Model.h"
+	"GL_Texture.h"
+
+1541582357 source:c:\special\projects\game\shmup_game\glprojectilerenderer.cpp
+	"GLProjectileRenderer.h"
+
+1541336160 source:c:\special\projects\game\shmup_game\gltext.cpp
+	"GLText.h"
+
+1541256077 source:c:\special\projects\game\shmup_game\guibutton.cpp
+	"GUIButton.h"
+
+1541340424 source:c:\special\projects\game\shmup_game\guicheckbox.cpp
+	"GUICheckBox.h"
+
+1541338598 source:c:\special\projects\game\shmup_game\guielement.cpp
+	"GUIElement.h"
+
+1540026856 source:c:\special\projects\game\shmup_game\input.cpp
+	"Input.h"
+
+1540227359 source:c:\special\projects\game\shmup_game\level.cpp
+	"Level.h"
+
+1541536412 source:c:\special\projects\game\shmup_game\light.cpp
+	"Light.h"
+
+1541493481 source:c:\special\projects\game\shmup_game\main.cpp
+	"Game.h"
+	<filesystem>
+
+1541573612 source:c:\special\projects\game\shmup_game\particles.cpp
+	"Particles.h"
+
+1541602334 source:c:\special\projects\game\shmup_game\player.cpp
+	"Player.h"
+
+1541659613 source:c:\special\projects\game\shmup_game\projectile.cpp
+	"Projectile.h"
+
+1541442869 source:c:\special\projects\game\shmup_game\resourceloader.cpp
+	"ResourceLoader.h"
+
+1541412351 source:c:\special\projects\game\shmup_game\ship.cpp
+	"ship.h"
+
