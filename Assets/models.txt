@@ -1,0 +1,2 @@
+model ship.fbx 05
+model enemy.fbx 10

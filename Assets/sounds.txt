@@ -1,0 +1,4 @@
+sound laser.wav 15
+sound heavy-laser.wav 45
+sound explosion.wav 03
+sound hit.wav 04
