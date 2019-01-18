@@ -1,5 +1,0 @@
-sound ../Assets/laser.wav 15
-sound ../Assets/heavy-laser.wav 45
-sound ../Assets/explosion.wav 3
-sound ../Assets/hit.wav 4
-sound ../Assets/grind.wav 5
