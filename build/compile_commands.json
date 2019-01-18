@@ -1,0 +1,163 @@
+[
+{
+  "directory": "/home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/build",
+  "command": "/bin/clang-7   -I/usr/include/SDL2 -I\"../|\" -I../Source  -g   -o CMakeFiles/shmup_linux.dir/Source/main.cpp.o -c /home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/Source/main.cpp",
+  "file": "/home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/Source/main.cpp"
+},
+
+{
+  "directory": "/home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/build",
+  "command": "/bin/clang-7   -I/usr/include/SDL2 -I\"../|\" -I../Source  -g   -o CMakeFiles/shmup_linux.dir/Source/Game.cpp.o -c /home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/Source/Game.cpp",
+  "file": "/home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/Source/Game.cpp"
+},
+
+{
+  "directory": "/home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/build",
+  "command": "/bin/clang-7   -I/usr/include/SDL2 -I\"../|\" -I../Source  -g   -o CMakeFiles/shmup_linux.dir/Source/AudioSystem.cpp.o -c /home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/Source/AudioSystem.cpp",
+  "file": "/home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/Source/AudioSystem.cpp"
+},
+
+{
+  "directory": "/home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/build",
+  "command": "/bin/clang-7   -I/usr/include/SDL2 -I\"../|\" -I../Source  -g   -o CMakeFiles/shmup_linux.dir/Source/collision.cpp.o -c /home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/Source/collision.cpp",
+  "file": "/home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/Source/collision.cpp"
+},
+
+{
+  "directory": "/home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/build",
+  "command": "/bin/clang-7   -I/usr/include/SDL2 -I\"../|\" -I../Source  -g   -o CMakeFiles/shmup_linux.dir/Source/Cursor.cpp.o -c /home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/Source/Cursor.cpp",
+  "file": "/home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/Source/Cursor.cpp"
+},
+
+{
+  "directory": "/home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/build",
+  "command": "/bin/clang-7   -I/usr/include/SDL2 -I\"../|\" -I../Source  -g   -o CMakeFiles/shmup_linux.dir/Source/sdl_gl_window.cpp.o -c /home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/Source/sdl_gl_window.cpp",
+  "file": "/home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/Source/sdl_gl_window.cpp"
+},
+
+{
+  "directory": "/home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/build",
+  "command": "/bin/clang-7   -I/usr/include/SDL2 -I\"../|\" -I../Source  -g   -o CMakeFiles/shmup_linux.dir/Source/Enemy.cpp.o -c /home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/Source/Enemy.cpp",
+  "file": "/home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/Source/Enemy.cpp"
+},
+
+{
+  "directory": "/home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/build",
+  "command": "/bin/clang-7   -I/usr/include/SDL2 -I\"../|\" -I../Source  -g   -o CMakeFiles/shmup_linux.dir/Source/EnemyManager.cpp.o -c /home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/Source/EnemyManager.cpp",
+  "file": "/home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/Source/EnemyManager.cpp"
+},
+
+{
+  "directory": "/home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/build",
+  "command": "/bin/clang-7   -I/usr/include/SDL2 -I\"../|\" -I../Source  -g   -o CMakeFiles/shmup_linux.dir/Source/GLModel.cpp.o -c /home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/Source/GLModel.cpp",
+  "file": "/home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/Source/GLModel.cpp"
+},
+
+{
+  "directory": "/home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/build",
+  "command": "/bin/clang-7   -I/usr/include/SDL2 -I\"../|\" -I../Source  -g   -o CMakeFiles/shmup_linux.dir/Source/GLProgramManager.cpp.o -c /home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/Source/GLProgramManager.cpp",
+  "file": "/home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/Source/GLProgramManager.cpp"
+},
+
+{
+  "directory": "/home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/build",
+  "command": "/bin/clang-7   -I/usr/include/SDL2 -I\"../|\" -I../Source  -g   -o CMakeFiles/shmup_linux.dir/Source/GLTexture.cpp.o -c /home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/Source/GLTexture.cpp",
+  "file": "/home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/Source/GLTexture.cpp"
+},
+
+{
+  "directory": "/home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/build",
+  "command": "/bin/clang-7   -I/usr/include/SDL2 -I\"../|\" -I../Source  -g   -o CMakeFiles/shmup_linux.dir/Source/GL2DElement.cpp.o -c /home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/Source/GL2DElement.cpp",
+  "file": "/home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/Source/GL2DElement.cpp"
+},
+
+{
+  "directory": "/home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/build",
+  "command": "/bin/clang-7   -I/usr/include/SDL2 -I\"../|\" -I../Source  -g   -o CMakeFiles/shmup_linux.dir/Source/GL2DElementArray.cpp.o -c /home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/Source/GL2DElementArray.cpp",
+  "file": "/home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/Source/GL2DElementArray.cpp"
+},
+
+{
+  "directory": "/home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/build",
+  "command": "/bin/clang-7   -I/usr/include/SDL2 -I\"../|\" -I../Source  -g   -o CMakeFiles/shmup_linux.dir/Source/GLCamera.cpp.o -c /home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/Source/GLCamera.cpp",
+  "file": "/home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/Source/GLCamera.cpp"
+},
+
+{
+  "directory": "/home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/build",
+  "command": "/bin/clang-7   -I/usr/include/SDL2 -I\"../|\" -I../Source  -g   -o CMakeFiles/shmup_linux.dir/Source/GLModelManager.cpp.o -c /home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/Source/GLModelManager.cpp",
+  "file": "/home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/Source/GLModelManager.cpp"
+},
+
+{
+  "directory": "/home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/build",
+  "command": "/bin/clang-7   -I/usr/include/SDL2 -I\"../|\" -I../Source  -g   -o CMakeFiles/shmup_linux.dir/Source/GLMultilineText.cpp.o -c /home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/Source/GLMultilineText.cpp",
+  "file": "/home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/Source/GLMultilineText.cpp"
+},
+
+{
+  "directory": "/home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/build",
+  "command": "/bin/clang-7   -I/usr/include/SDL2 -I\"../|\" -I../Source  -g   -o CMakeFiles/shmup_linux.dir/Source/GLProjectileRenderer.cpp.o -c /home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/Source/GLProjectileRenderer.cpp",
+  "file": "/home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/Source/GLProjectileRenderer.cpp"
+},
+
+{
+  "directory": "/home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/build",
+  "command": "/bin/clang-7   -I/usr/include/SDL2 -I\"../|\" -I../Source  -g   -o CMakeFiles/shmup_linux.dir/Source/GLText.cpp.o -c /home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/Source/GLText.cpp",
+  "file": "/home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/Source/GLText.cpp"
+},
+
+{
+  "directory": "/home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/build",
+  "command": "/bin/clang-7   -I/usr/include/SDL2 -I\"../|\" -I../Source  -g   -o CMakeFiles/shmup_linux.dir/Source/GUIButton.cpp.o -c /home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/Source/GUIButton.cpp",
+  "file": "/home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/Source/GUIButton.cpp"
+},
+
+{
+  "directory": "/home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/build",
+  "command": "/bin/clang-7   -I/usr/include/SDL2 -I\"../|\" -I../Source  -g   -o CMakeFiles/shmup_linux.dir/Source/GUICheckBox.cpp.o -c /home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/Source/GUICheckBox.cpp",
+  "file": "/home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/Source/GUICheckBox.cpp"
+},
+
+{
+  "directory": "/home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/build",
+  "command": "/bin/clang-7   -I/usr/include/SDL2 -I\"../|\" -I../Source  -g   -o CMakeFiles/shmup_linux.dir/Source/GUISystem.cpp.o -c /home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/Source/GUISystem.cpp",
+  "file": "/home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/Source/GUISystem.cpp"
+},
+
+{
+  "directory": "/home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/build",
+  "command": "/bin/clang-7   -I/usr/include/SDL2 -I\"../|\" -I../Source  -g   -o CMakeFiles/shmup_linux.dir/Source/Input.cpp.o -c /home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/Source/Input.cpp",
+  "file": "/home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/Source/Input.cpp"
+},
+
+{
+  "directory": "/home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/build",
+  "command": "/bin/clang-7   -I/usr/include/SDL2 -I\"../|\" -I../Source  -g   -o CMakeFiles/shmup_linux.dir/Source/Particles.cpp.o -c /home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/Source/Particles.cpp",
+  "file": "/home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/Source/Particles.cpp"
+},
+
+{
+  "directory": "/home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/build",
+  "command": "/bin/clang-7   -I/usr/include/SDL2 -I\"../|\" -I../Source  -g   -o CMakeFiles/shmup_linux.dir/Source/Player.cpp.o -c /home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/Source/Player.cpp",
+  "file": "/home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/Source/Player.cpp"
+},
+
+{
+  "directory": "/home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/build",
+  "command": "/bin/clang-7   -I/usr/include/SDL2 -I\"../|\" -I../Source  -g   -o CMakeFiles/shmup_linux.dir/Source/Projectile.cpp.o -c /home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/Source/Projectile.cpp",
+  "file": "/home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/Source/Projectile.cpp"
+},
+
+{
+  "directory": "/home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/build",
+  "command": "/bin/clang-7   -I/usr/include/SDL2 -I\"../|\" -I../Source  -g   -o CMakeFiles/shmup_linux.dir/Source/ship.cpp.o -c /home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/Source/ship.cpp",
+  "file": "/home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/Source/ship.cpp"
+},
+
+{
+  "directory": "/home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/build",
+  "command": "/bin/clang-7   -I/usr/include/SDL2 -I\"../|\" -I../Source  -g   -o CMakeFiles/shmup_linux.dir/Source/Light.cpp.o -c /home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/Source/Light.cpp",
+  "file": "/home/jhai/Development/Projects/Cpp/Game/shmup/ShmupThing/Source/Light.cpp"
+}
+]
