@@ -91,7 +91,7 @@ int ProjectileManager::collide(const Type& shipType,const boundingBox& box)
             }
         }
     };
-
+    
     std::for_each(mProjectiles.begin(),mProjectiles.end(),collisionTest);
 
     auto removeCond = [](projectile& proj) -> bool
