@@ -1,5 +1,5 @@
 #include "GUISystem.h"
-
+#include <algorithm>
 GUISystem::GUISystem() : mCursorX(0),mCursorY(0),mClicked(false)
 {
     mButtons.clear();
@@ -20,15 +20,17 @@ void GUISystem::update(const float& cursX,const float& cursY)
     for(auto& button: mButtons)
     {
         button.update();
-        if(mCursorX > button.mX && mCursorX < (button.mWidth+button.mX))
+        auto conds = std::vector<bool>{
+            mCursorX > button.mX,
+            mCursorX < (button.mWidth+button.mX),
+            mCursorY > button.mY,
+            mCursorY < (button.mHeight+button.mY)
+        };
+        if(std::all_of(conds.begin(),conds.end(), [](bool a) -> bool {return a;} ))
         {
-            if(mCursorY > button.mY && mCursorY < (button.mHeight+button.mY))
-            {
-                button.onHover();
-                if(mClicked)
-                {
-                    button.onClick();
-                }
+            button.onHover();
+            if(mClicked){
+                button.onClick();
             }
         }
     }

@@ -1,5 +1,8 @@
 #include "Game.h"
-
+/*
+TODO:
+- Improve logic in projectile handler class
+*/
 Game shmup{Game()};
 int main()
 {
