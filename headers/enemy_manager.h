@@ -1,8 +1,8 @@
 #ifndef ENEMYMANAGER_H_INCLUDED
 #define ENEMYMANAGER_H_INCLUDED
-#include "Enemy.h"
-#include "GameEvent.h"
-#include "Particles.h"
+#include "enemy.h"
+#include "game_event.h"
+#include "gl_particles.h"
 #include <iostream>
 #include <memory>
 struct EnemySpawner {

@@ -13,7 +13,6 @@ class InputHandler {
 private:
   std::map<unsigned int, input_state> input_states;
   std::map<SDL_Keycode, unsigned int> input_map;
-
 public:
   InputHandler();
   ~InputHandler();

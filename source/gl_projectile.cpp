@@ -1,4 +1,4 @@
-#include "../headers/Projectile.h"
+#include "../headers/gl_projectile.h"
 
 ProjectileManager::ProjectileManager() { projectiles.clear(); }
 

@@ -1,4 +1,4 @@
-#include "../headers/Input.h"
+#include "../headers/sdl_input.h"
 
 InputHandler::InputHandler() {
   input_states.clear();

@@ -1,4 +1,4 @@
-#include "../headers/GLCamera.h"
+#include "../headers/glm_camera.h"
 
 Camera::Camera()
     : view_matrix(glm::mat4()), projection_matrix(glm::mat4()),

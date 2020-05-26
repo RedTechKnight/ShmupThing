@@ -1,7 +1,7 @@
 #ifndef GLPROJECTILERENDERER_H_INCLUDED
 #define GLPROJECTILERENDERER_H_INCLUDED
-#include "GLModel.h"
-#include "GLTexture.h"
+#include "gl_model.h"
+#include "gl_texture.h"
 class GLProjectileRenderer {
 private:
   GLModel model;

@@ -1,4 +1,4 @@
-#include "../headers/Enemy.h"
+#include "../headers/enemy.h"
 
 Enemy::Enemy()
     : Ship(), current_frame(0), current_frame_percentage(0.0f),

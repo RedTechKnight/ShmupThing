@@ -1,4 +1,4 @@
-#include "../headers/GLTexture.h"
+#include "../headers/gl_texture.h"
 
 GLTexture::GLTexture() {
   width = 0;

@@ -1,6 +1,6 @@
 #ifndef GL2DELEMENT_H_INCLUDED
 #define GL2DELEMENT_H_INCLUDED
-#include "GLTexture.h"
+#include "gl_texture.h"
 #include <array>
 class GL2DElement {
 private:

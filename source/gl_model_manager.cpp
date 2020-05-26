@@ -1,4 +1,4 @@
-#include "../headers/GLModelManager.h"
+#include "../headers/gl_model_manager.h"
 
 GLModelManager::GLModelManager() { models.clear(); }
 

@@ -1,4 +1,4 @@
-#include "../headers/GL2DElementArray.h"
+#include "../headers/gl_2d_element_array.h"
 
 GL2DElementArray::GL2DElementArray()
     : texture_array(0), vertex_buffer(0), vertex_array_object(0),

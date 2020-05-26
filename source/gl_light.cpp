@@ -1,4 +1,4 @@
-#include "../headers/Light.h"
+#include "../headers/gl_light.h"
 
 LightManager::LightManager() {
   for (unsigned int i = 0; i < 64; i++) {

@@ -1,4 +1,4 @@
-#include "../headers/GL2DElement.h"
+#include "../headers/gl_2d_element.h"
 
 GL2DElement::GL2DElement()
     : texture(GLTexture()), screen_width(0), screen_height(0) {}

@@ -1,7 +1,7 @@
 #ifndef SHIP_H_INCLUDED
 #define SHIP_H_INCLUDED
-#include "GameEvent.h"
-#include "Projectile.h"
+#include "game_event.h"
+#include "gl_projectile.h"
 #include "collision.h"
 #include <glm/ext/matrix_transform.hpp>
 #include <glm/ext/scalar_constants.hpp>

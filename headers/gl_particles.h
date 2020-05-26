@@ -1,9 +1,9 @@
 #ifndef PARTICLES_H_INCLUDED
 #define PARTICLES_H_INCLUDED
 
-#include "GLModel.h"
-#include "GLTexture.h"
-#include "Light.h"
+#include "gl_model.h"
+#include "gl_texture.h"
+#include "gl_light.h"
 #include <algorithm>
 #include <functional>
 #include <glm/ext/matrix_transform.hpp>

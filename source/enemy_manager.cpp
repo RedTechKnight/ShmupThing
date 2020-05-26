@@ -1,4 +1,4 @@
-#include "../headers/EnemyManager.h"
+#include "../headers/enemy_manager.h"
 EnemyManager::EnemyManager() { enemies.clear(); }
 
 EnemyManager::~EnemyManager() { enemies.clear(); }

@@ -1,6 +1,6 @@
 #ifndef PROJECTILE_H_INCLUDED
 #define PROJECTILE_H_INCLUDED
-#include "Light.h"
+#include "gl_light.h"
 #include "collision.h"
 #include <algorithm>
 #include <array>

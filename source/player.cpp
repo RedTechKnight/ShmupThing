@@ -1,4 +1,4 @@
-#include "../headers/Player.h"
+#include "../headers/player.h"
 
 Player::Player() : Ship(), fire_delay(200), hit_flash(0), hit_flash_length(400) {
   bounding_box.center = glm::vec3(position);

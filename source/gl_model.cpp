@@ -1,4 +1,4 @@
-#include "../headers/GLModel.h"
+#include "../headers/gl_model.h"
 
 GLModel::GLModel() {
   vertices.clear();

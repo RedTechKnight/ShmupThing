@@ -1,4 +1,4 @@
-#include "../headers/Particles.h"
+#include "../headers/gl_particles.h"
 
 ParticleSystem::ParticleSystem()
     : next_emit_time(0), origin(0, 0, 0), max_size(0), emit_rate(0),

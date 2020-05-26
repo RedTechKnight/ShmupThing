@@ -1,6 +1,6 @@
 #ifndef GLMODELMANAGER_H_INCLUDED
 #define GLMODELMANAGER_H_INCLUDED
-#include "GLModel.h"
+#include "gl_model.h"
 #include <fstream>
 #include <iostream>
 #include <istream>

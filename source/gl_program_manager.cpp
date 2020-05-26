@@ -1,4 +1,4 @@
-#include "../headers/GLProgramManager.h"
+#include "../headers/gl_program_manager.h"
 
 GLProgramManager::GLProgramManager() : last_uniform_bind_point(0) {
   programs.clear();

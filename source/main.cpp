@@ -1,4 +1,4 @@
-#include "../headers/Game.h"
+#include "../headers/game.h"
 
 Game shmup{Game()};
 int main() {
