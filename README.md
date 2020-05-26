@@ -1,7 +1,6 @@
 # A Shmup Thing
 
-A small shmup thing I made.
+A small shmup thing I made, still very much incomplete.
 
-Coded in C++. Uses OpenGL (with the GL Extension Wrangler) for graphics, OpenGL Mathematics for the relevant mathematical functions, SDL2 for window management and input handling, SDL2_Mixer for audio, SDL2_TTF for font rendering, AssImp for model loading and FreeImage for image loading.
+Needs OpenGL for rendering, has SDL2, glew, AssImp and FreeImage as build dependencies, uses Meson as its build system.
 
-Still very much incomplete.
