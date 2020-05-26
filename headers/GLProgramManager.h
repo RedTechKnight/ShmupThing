@@ -1,51 +1,53 @@
 #ifndef GL_PROGRAMMANAGER_H_INCLUDED
 #define GL_PROGRAMMANAGER_H_INCLUDED
 #include "sdl_gl_window.h"
+#include <fstream>
 #include <list>
 #include <map>
-#include <vector>
 #include <string>
-#include <fstream>
+#include <vector>
 
-struct UniformBlock
-{
-    GLuint uniformBuffer;
-    GLuint bindingPoint;
+struct UniformBlock {
+  GLuint uniform_buffer;
+  GLuint binding_point;
 };
 
-struct GLShader
-{
-    GLuint program;
-    GLuint shader;
+struct GLShader {
+  GLuint program;
+  GLuint shader;
 };
-class GLProgramManager
-{
+class GLProgramManager {
 private:
-    unsigned int mLastUniformBindPoint;
-    std::list<GLShader> mShaders;
+  unsigned int last_uniform_bind_point;
+  std::list<GLShader> shaders;
+
 public:
-    std::map<unsigned int,GLint> mUniforms;
-    std::map<unsigned int,GLuint> mPrograms;
-    std::map<unsigned int,UniformBlock> mUniformBlocks;
+  std::map<unsigned int, GLint> uniforms;
+  std::map<unsigned int, GLuint> programs;
+  std::map<unsigned int, UniformBlock> uniform_blocks;
 
-    GLProgramManager();
-    ~GLProgramManager();
+  GLProgramManager();
+  ~GLProgramManager();
 
-    void createProgram(const unsigned int& programID);
-    bool loadShader(const std::string& filename,const GLenum& shaderType,const unsigned int& programID);
-    void linkProgram(const unsigned int& programName);
-    void useProgram(const unsigned int& programName);
+  void create_program(const unsigned int &programID);
+  bool load_shader(const std::string &filename, const GLenum &shaderType,
+                   const unsigned int &programID);
+  void link_program(const unsigned int &programName);
+  void use_program(const unsigned int &programName);
 
-    void getUniform(const std::string& nameInShader,const unsigned int& programID,const unsigned int& uniformID);
+  void get_uniform(const std::string &nameInShader,
+                   const unsigned int &programID,
+                   const unsigned int &uniformID);
 
-    void createUniformBlock(const unsigned int& program,const std::string& nameInShader,const unsigned int& uniformBlockID);
-    void bindUniformBlock(const unsigned int& uniformBlockID);
+  void create_uniform_block(const unsigned int &program,
+                            const std::string &nameInShader,
+                            const unsigned int &uniformBlockID);
+  void bind_uniform_block(const unsigned int &uniformBlockID);
 
-    void printShaderLog(GLuint shader);
-    void printProgramLog(GLuint program);
+  void print_shader_log(GLuint shader);
+  void print_program_log(GLuint program);
 
-    void deleteProgram(const unsigned int& uniform);
+  void delete_program(const unsigned int &uniform);
 };
-
 
 #endif // GL_PROGRAMMANAGER_H_INCLUDED

@@ -1,79 +1,67 @@
 #include "../headers/EnemyManager.h"
-EnemyManager::EnemyManager()
-{
-    mEnemies.clear();
-}
+EnemyManager::EnemyManager() { enemies.clear(); }
 
-EnemyManager::~EnemyManager()
-{
-    mEnemies.clear();
-}
+EnemyManager::~EnemyManager() { enemies.clear(); }
 
-void EnemyManager::update(const unsigned int& delta)
-{
+void EnemyManager::update(const unsigned int &delta) {
 
+  for (auto &enemy : enemies) {
+    enemy.screen_center = screen_center;
+    enemy.player_location = player_location;
 
-    for(auto& enemy : mEnemies)
-    {
-        enemy.mScreenCenter = mScreenCenter;
-        enemy.mPlayerLocation = mPlayerLocation;
-
-        if(!enemy.mActive)
-        {
-            if(enemy.mFinalPosition.y < mScreenCenter.y + mSpawnDistance)
-            {
-                enemy.mActive = true;
-            }
-        }
-
-        if(enemy.mActive)
-        {
-            enemy.update(delta);
-        }
-
-        if(enemy.mHealth > 0)
-        {
-            std::insert_iterator< std::list<ProjectileFireEvent> > fireEventInserter(mFireEvents,mFireEvents.end());
-            std::move(enemy.mFireEvents.begin(),enemy.mFireEvents.end(),fireEventInserter);
-            enemy.mFireEvents.clear();
-
-            std::insert_iterator< std::list<HitEvent> > hitEventInserter(mHitEvents,mHitEvents.end());
-            std::move(enemy.mHitEvents.begin(),enemy.mHitEvents.end(),hitEventInserter);
-            enemy.mHitEvents.clear();
-        }
-        else
-        {
-            ExplosionEvent explosion;
-            explosion.explosionSoundEffectID = 3;
-            explosion.effectLife = 600;
-            explosion.emitInterval = 1;
-            explosion.emitRate = 512;
-            explosion.maxSize = 512;
-            explosion.origin = enemy.mFinalPosition;
-            explosion.ID = enemy.mID;
-            mExplosionEvents.push_back(explosion);
-        }
+    if (!enemy.is_active) {
+      if (enemy.final_position.y < screen_center.y + spawn_distance) {
+        enemy.is_active = true;
+      }
     }
 
-    auto removeCondition = [](Enemy& enemy) -> bool
-    {
-        return (enemy.mHealth <= 0);
-    };
-    mEnemies.erase(std::remove_if(mEnemies.begin(),mEnemies.end(),removeCondition),mEnemies.end());
+    if (enemy.is_active) {
+      enemy.update(delta);
+    }
 
-    auto packOffset = [](Enemy& enemy) -> glm::vec4
-    {
-        return glm::vec4(enemy.mFinalPosition,1);
-    };
+    if (enemy.health > 0) {
+      std::insert_iterator<std::list<ProjectileFireEvent>> fire_event_inserter(
+          fire_events, fire_events.end());
+      std::move(enemy.fire_events.begin(), enemy.fire_events.end(),
+                fire_event_inserter);
+      enemy.fire_events.clear();
 
-    std::transform(mEnemies.begin(),mEnemies.end(),mOffsets.begin(),packOffset);
+      std::insert_iterator<std::list<HitEvent>> hit_event_inserter(
+          hit_events, hit_events.end());
+      std::move(enemy.hit_events.begin(), enemy.hit_events.end(),
+                hit_event_inserter);
+      enemy.hit_events.clear();
+    } else {
+      ExplosionEvent explosion;
+      explosion.explosion_sound_effect_id = 3;
+      explosion.effect_life = 600;
+      explosion.emit_interval = 1;
+      explosion.emit_rate = 512;
+      explosion.max_size = 512;
+      explosion.origin = enemy.final_position;
+      explosion.ID = enemy.id;
+      explosion_events.push_back(explosion);
+    }
+  }
 
-    auto packHitflash = [](Enemy& enemy) -> glm::vec4
-    {
-        return glm::vec4(1,1*enemy.mHitFlash,1*enemy.mHitFlash,1);
-    };
-    std::fill(mHitFlashes.begin(),mHitFlashes.end(),glm::vec4(0,0,0,0));
-    std::transform(mEnemies.begin(),mEnemies.end(),mHitFlashes.begin(),packHitflash);
+  auto remove_condition = [](Enemy &enemy) -> bool {
+    return (enemy.health <= 0);
+  };
+  enemies.erase(
+      std::remove_if(enemies.begin(), enemies.end(), remove_condition),
+      enemies.end());
+
+  auto pack_offset = [](Enemy &enemy) -> glm::vec4 {
+    return glm::vec4(enemy.final_position, 1);
+  };
+
+  std::transform(enemies.begin(), enemies.end(), offsets.begin(),
+                 pack_offset);
+
+  auto pack_hitflash = [](Enemy &enemy) -> glm::vec4 {
+    return glm::vec4(1, 1 * enemy.hit_flash, 1 * enemy.hit_flash, 1);
+  };
+  std::fill(hit_flashes.begin(), hit_flashes.end(), glm::vec4(0, 0, 0, 0));
+  std::transform(enemies.begin(), enemies.end(), hit_flashes.begin(),
+                 pack_hitflash);
 }
-
-

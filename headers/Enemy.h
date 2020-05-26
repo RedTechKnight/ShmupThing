@@ -1,41 +1,37 @@
 #ifndef ENEMY_H_INCLUDED
 #define ENEMY_H_INCLUDED
-#include <list>
 #include "ship.h"
+#include <list>
 
-
-
-class Enemy : public Ship
-{
+class Enemy : public Ship {
 private:
-    unsigned int mCurrentFrame;
-    float mCurrentFramePercentage;
-    int mHitFlashTime;
+  unsigned int current_frame;
+  float current_frame_percentage;
+  int hit_flash_time;
+
 public:
-    std::list< ProjectileFireEvent > mFireEvents;
-    std::list< HitEvent > mHitEvents;
+  std::list<ProjectileFireEvent> fire_events;
+  std::list<HitEvent> hit_events;
 
-    glm::vec3 mFinalPosition;
-    std::vector<glm::vec3> mPositionFrames;
-    float mMilliSecStep;
-    bool mScreenRelative;
-    glm::vec3 mScreenCenter;
-    glm::vec3 mPlayerLocation;
-    glm::vec3 mMoveVel;
-    unsigned int mFireRate;
-    int mNextFire;
-    bool mActive;
-    float mHitFlash;
-    unsigned int mHitFlashLength;
+  glm::vec3 final_position;
+  std::vector<glm::vec3> position_frames;
+  float milli_sec_step;
+  bool screen_relative;
+  glm::vec3 screen_center;
+  glm::vec3 player_location;
+  glm::vec3 move_vel;
+  unsigned int fire_rate;
+  int next_fire;
+  bool is_active;
+  float hit_flash;
+  unsigned int hit_flash_length;
 
-    Enemy();
-    ~Enemy();
+  Enemy();
+  ~Enemy();
 
-    virtual void update(const unsigned int& delta);
-    virtual void fire();
-    void hit();
+  virtual void update(const unsigned int &delta);
+  virtual void fire();
+  void hit();
 };
-
-
 
 #endif // ENEMY_H_INCLUDED

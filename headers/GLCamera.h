@@ -1,38 +1,38 @@
 #ifndef _GL_CAMERA_H
 #define _GL_CAMERA_H
-#include <glm/glm.hpp>
 #include <glm/ext/matrix_transform.hpp>
 #include <glm/ext/scalar_constants.hpp>
+#include <glm/glm.hpp>
 
-class Camera
-{
-    private:
-        glm::mat4 mViewMat;
-        glm::mat4 mProjectionMat;
-        glm::mat3 mUpright;
-        glm::vec3 mRightVec;
-        glm::vec3 mUpVec;
-        glm::vec3 mLookAtVec;
-        glm::vec3 mEyePos;
-        glm::vec3 mTarget;
-        bool mOrientationUpdated;
-        bool mFollowTarget;
-    public:
-        Camera();
-        ~Camera();
+class Camera {
+private:
+  glm::mat4 view_matrix;
+  glm::mat4 projection_matrix;
+  glm::mat3 upright_matrix;
+  glm::vec3 right_vector;
+  glm::vec3 up_vector;
+  glm::vec3 look_vector;
+  glm::vec3 eye_position;
+  glm::vec3 target_position;
+  bool is_orientation_updated;
+  bool is_following_target;
 
-        void createViewMatrix(const glm::vec3& eyePos,const glm::vec3& viewDir);
-        void followTarget(const glm::vec3& target);
-        void recreateViewMatrix();
-        void createProjectionMatrix(const float& nearPlane,const float& farPlane,const float& FOV,const float& aspectRatio);
-        glm::mat4 getViewMatrix();
-        glm::mat4 getProjectionMatrix();
-        glm::mat3 getUprightMatrix();
+public:
+  Camera();
+  ~Camera();
 
-        void heading(const float& angle);
-        void pitch(const float& angle);
-        void move(const glm::vec3& dir);
+  void create_view_matrix(const glm::vec3 &eyePos, const glm::vec3 &viewDir);
+  void follow_target(const glm::vec3 &target);
+  void recreate_view_matrix();
+  void create_projection_matrix(const float &nearPlane, const float &farPlane,
+                                const float &FOV, const float &aspectRatio);
+  glm::mat4 get_view_matrix();
+  glm::mat4 get_projection_matrix();
+  glm::mat3 get_upright_matrix();
+
+  void heading(const float &angle);
+  void pitch(const float &angle);
+  void move(const glm::vec3 &dir);
 };
-
 
 #endif // _GL_CAMERA_H

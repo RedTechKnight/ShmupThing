@@ -1,11 +1,5 @@
 #include "../headers/ship.h"
 
-Ship::Ship() : mPosition(0,0,0),mID(0),mModelID(0),mHealth(0)
-{
+Ship::Ship() : position(0, 0, 0), id(0), model_id(0), health(0) {}
 
-}
-
-Ship::~Ship()
-{
-
-}
+Ship::~Ship() {}

@@ -1,30 +1,22 @@
 #include "../headers/Game.h"
-/*
-TODO:
-- Improve logic in projectile handler class
-*/
-Game shmup{Game()};
-int main()
-{
-    uint32_t lastUpdate = 0;
-    uint32_t updateInterval = 5;
-    shmup.mGameRunning = true;
-    while(shmup.mGameRunning)
-    {
-        if((SDL_GetTicks() - lastUpdate) > updateInterval)
-        {
-            shmup.start();
-            shmup.init();
-            shmup.updateInterface(SDL_GetTicks() - lastUpdate);
-            shmup.update(SDL_GetTicks() - lastUpdate);
-            shmup.render();
 
-            lastUpdate = SDL_GetTicks();
-        }
-        else
-        {
-            SDL_Delay(1);
-        }
+Game shmup{Game()};
+int main() {
+  uint32_t last_update = 0;
+  uint32_t update_interval = 5;
+  shmup.game_running = true;
+  while (shmup.game_running) {
+    if ((SDL_GetTicks() - last_update) > update_interval) {
+      shmup.start();
+      shmup.init();
+      shmup.update_interface(SDL_GetTicks() - last_update);
+      shmup.update(SDL_GetTicks() - last_update);
+      shmup.render();
+
+      last_update = SDL_GetTicks();
+    } else {
+      SDL_Delay(1);
     }
-    return 0;
+  }
+  return 0;
 }

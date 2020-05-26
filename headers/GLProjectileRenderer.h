@@ -1,19 +1,19 @@
 #ifndef GLPROJECTILERENDERER_H_INCLUDED
 #define GLPROJECTILERENDERER_H_INCLUDED
-#include "GLTexture.h"
 #include "GLModel.h"
-class GLProjectileRenderer
-{
+#include "GLTexture.h"
+class GLProjectileRenderer {
 private:
-    GLModel mModel;
+  GLModel model;
+
 public:
-    GLTexture mTexture;
+  GLTexture texture;
 
-    GLProjectileRenderer();
-    ~GLProjectileRenderer();
+  GLProjectileRenderer();
+  ~GLProjectileRenderer();
 
-    void init();
-    void draw(const unsigned int& particleCount);
+  void init();
+  void draw(const unsigned int &particleCount);
 };
 
 #endif // GLPROJECTILERENDERER_H_INCLUDED

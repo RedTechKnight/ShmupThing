@@ -1,17 +1,15 @@
 #ifndef COLLISION_H_INCLUDED
 #define COLLISION_H_INCLUDED
 
-#include <glm/glm.hpp>
 #include <glm/ext/matrix_transform.hpp>
 #include <glm/ext/scalar_constants.hpp>
+#include <glm/glm.hpp>
 
-struct boundingBox
-{
-    glm::vec3 center;
-    glm::vec3 size;
+struct BoundingBox {
+  glm::vec3 center;
+  glm::vec3 size;
 };
 
-bool collision(const boundingBox& box0,const boundingBox& box1);
+bool are_colliding(const BoundingBox &a, const BoundingBox &b);
 
-
-#endif // COLLISION_H_INCLUDED
+#endif

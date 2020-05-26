@@ -1,40 +1,38 @@
 #ifndef LIGHT_H_INCLUDED
 #define LIGHT_H_INCLUDED
-#include <vector>
-#include <list>
-#include <memory>
-#include <map>
-#include <queue>
-#include <glm/glm.hpp>
+#include <GL/glew.h>
+#include <array>
 #include <glm/ext/matrix_transform.hpp>
 #include <glm/ext/scalar_constants.hpp>
+#include <glm/glm.hpp>
+#include <list>
+#include <map>
+#include <memory>
+#include <queue>
 #include <string>
-#include <array>
-#include <GL/glew.h>
-struct LightBlock
-{
-    std::array<glm::vec4,64> position;
-    std::array<glm::vec4,64> colour;
+#include <vector>
+struct LightBlock {
+  std::array<glm::vec4, 64> position;
+  std::array<glm::vec4, 64> colour;
 };
 
-struct Light
-{
-    glm::vec4 position;
-    glm::vec4 colour;
+struct Light {
+  glm::vec4 position;
+  glm::vec4 colour;
 };
 
-class LightManager
-{
+class LightManager {
 private:
-    int mLightCount;
+  int light_count;
+
 public:
-    LightBlock mLights;
+  LightBlock lights;
 
-    LightManager();
-    ~LightManager();
+  LightManager();
+  ~LightManager();
 
-    void getLights(std::list<Light>& lights);
-    void uploadData();
+  void get_lights(std::list<Light> &lights);
+  void upload_data();
 };
 
 #endif // LIGHT_H_INCLUDED

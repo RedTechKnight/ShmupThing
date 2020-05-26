@@ -1,54 +1,52 @@
 #ifndef ENEMYMANAGER_H_INCLUDED
 #define ENEMYMANAGER_H_INCLUDED
-#include <memory>
-#include <iostream>
 #include "Enemy.h"
 #include "GameEvent.h"
 #include "Particles.h"
-struct EnemySpawner
-{
-    int spawnCount;
-    unsigned int spawnDelay;
-    int nextSpawn;
-    glm::vec3 spawnLocation;
-    glm::vec3 spawnOffset;
-    Enemy enemy;
+#include <iostream>
+#include <memory>
+struct EnemySpawner {
+  int spawnCount;
+  unsigned int spawnDelay;
+  int nextSpawn;
+  glm::vec3 spawnLocation;
+  glm::vec3 spawnOffset;
+  Enemy enemy;
 };
 
-struct ExplosionEvent
-{
-    unsigned int effectLife;
-    unsigned int emitInterval;
-    unsigned int emitRate;
-    unsigned int maxSize;
-    unsigned int explosionSoundEffectID;
-    glm::vec3 origin;
-    unsigned int ID;
+struct ExplosionEvent {
+  unsigned int effect_life;
+  unsigned int emit_interval;
+  unsigned int emit_rate;
+  unsigned int max_size;
+  unsigned int explosion_sound_effect_id;
+  glm::vec3 origin;
+  unsigned int ID;
 };
 
-class EnemyManager
-{
+class EnemyManager {
 private:
-    std::vector< unsigned int > mToRemove;
+  std::vector<unsigned int> mToRemove;
+
 public:
-    std::list< ExplosionEvent > mExplosionEvents;
-    std::list< HitEvent > mHitEvents;
-    std::list< ProjectileFireEvent > mFireEvents;
+  std::list<ExplosionEvent> explosion_events;
+  std::list<HitEvent> hit_events;
+  std::list<ProjectileFireEvent> fire_events;
 
-    std::list< Enemy > mEnemies;
-    std::array<glm::vec4,256> mOffsets;
-    std::array<glm::vec4,256> mHitFlashes;
+  std::list<Enemy> enemies;
+  std::array<glm::vec4, 256> offsets;
+  std::array<glm::vec4, 256> hit_flashes;
 
-    glm::vec3 mScreenCenter;
-    glm::vec3 mPlayerLocation;
+  glm::vec3 screen_center;
+  glm::vec3 player_location;
 
-    float mSpawnDistance;
-    float mDespawnDistance;
+  float spawn_distance;
+  float despawn_distance;
 
-    EnemyManager();
-    ~EnemyManager();
+  EnemyManager();
+  ~EnemyManager();
 
-    void update(const unsigned int& delta);
+  void update(const unsigned int &delta);
 };
 
 #endif // ENEMYMANAGER_H_INCLUDED

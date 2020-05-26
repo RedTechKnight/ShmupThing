@@ -3,30 +3,26 @@
 #include "sdl_gl_window.h"
 #include <map>
 
-struct inputState
-{
-    bool pressed;
-    bool held;
-    bool released;
+struct input_state {
+  bool pressed;
+  bool held;
+  bool released;
 };
 
-class InputHandler
-{
+class InputHandler {
 private:
-    std::map<unsigned int,inputState> mInputStates;
-    std::map<SDL_Keycode,unsigned int> mInputMap;
+  std::map<unsigned int, input_state> input_states;
+  std::map<SDL_Keycode, unsigned int> input_map;
+
 public:
+  InputHandler();
+  ~InputHandler();
 
-
-    InputHandler();
-    ~InputHandler();
-
-    void addAction(const SDL_Keycode& keycode,const unsigned int& action);
-    void handleInput(const SDL_Event& eventHandle);
-    bool keyJustPressed(const unsigned int& key);
-    bool keyHeld(const unsigned int& key);
-    bool keyReleased(const unsigned int& key);
+  void add_action(const SDL_Keycode &keycode, const unsigned int &action);
+  void handle_input(const SDL_Event &eventHandle);
+  bool is_key_just_pressed(const unsigned int &key);
+  bool is_key_held(const unsigned int &key);
+  bool is_key_released(const unsigned int &key);
 };
-
 
 #endif // INPUT_H_INCLUDED

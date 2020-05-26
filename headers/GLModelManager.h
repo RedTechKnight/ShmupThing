@@ -1,25 +1,27 @@
 #ifndef GLMODELMANAGER_H_INCLUDED
 #define GLMODELMANAGER_H_INCLUDED
 #include "GLModel.h"
-#include <map>
 #include <fstream>
-#include <istream>
 #include <iostream>
+#include <istream>
+#include <map>
 
-class GLModelManager
-{
+class GLModelManager {
 private:
-    std::map<unsigned int,GLModel> mModels;
+  std::map<unsigned int, GLModel> models;
+
 public:
-    GLModelManager();
-    ~GLModelManager();
+  GLModelManager();
+  ~GLModelManager();
 
-    void batchLoad(const std::string& filename);
-    void loadFromFile(const std::string& filename,const unsigned int& assimpProcessFlags,const unsigned int& ID);
-    void addModel(const GLModel& model,const unsigned int& ID);
+  void batch_load(const std::string &filename);
+  void load_from_file(const std::string &filename,
+                      const unsigned int &assimpProcessFlags,
+                      const unsigned int &ID);
+  void addModel(const GLModel &model, const unsigned int &ID);
 
-    void draw(const unsigned int& ID,const GLenum& drawType,const unsigned int& instanceCount);
+  void draw(const unsigned int &ID, const GLenum &drawType,
+            const unsigned int &instanceCount);
 };
-
 
 #endif // GLMODELMANAGER_H_INCLUDED

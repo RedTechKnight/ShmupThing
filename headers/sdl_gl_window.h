@@ -1,46 +1,43 @@
-#ifndef DRAGON_SDLGL_H_INCLUDED
-#define DRAGON_SDLGL_H_INCLUDED
-#include <SDL2/SDL.h>
+#ifndef SDLGL_H_INCLUDED
+#define SDLGL_H_INCLUDED
 #include <GL/glew.h>
-#include <SDL2/SDL_opengl.h>
 #include <GL/glu.h>
-#include <memory>
-#include <map>
-#include <vector>
+#include <SDL2/SDL.h>
+#include <SDL2/SDL_opengl.h>
 #include <iostream>
+#include <map>
+#include <memory>
+#include <vector>
 
-class GLWindow
-{
+class GLWindow {
 private:
+  SDL_GLContext gl_context;
+  std::string window_name;
+  uint32_t window_height;
+  uint32_t window_width;
+  const GLubyte *max_gl_version;
+  const GLubyte *gl_renderer;
+  uint32_t gl_major_version, gl_minor_version;
+  bool is_fullscreen;
+  SDL_Window *window;
 
-    SDL_GLContext mGLContext;
-    std::string mWindowName;
-    uint32_t mWindowHeight;
-    uint32_t mWindowWidth;
-    const GLubyte* mMaxGLVersion;
-    const GLubyte* mGLRenderer;
-    uint32_t mGLMajorVer,mGLMinorVer;
-    bool mFullscreen;
-    SDL_Window* mWindow;
 public:
-    std::map<unsigned int, std::vector<SDL_DisplayMode> > mDisplayModes;
+  std::map<unsigned int, std::vector<SDL_DisplayMode>> display_modes;
 
-    GLWindow();
-    ~GLWindow();
+  GLWindow();
+  ~GLWindow();
 
-    void initSDL();
-    bool createWindow(std::string windowName,uint32_t width,uint32_t height,uint32_t majorVer,uint32_t minorVer);
+  void initSDL();
+  bool create_window(std::string window_name, uint32_t width, uint32_t height,
+                     uint32_t major_ver, uint32_t minor_ver);
 
+  void setDisplayMode(SDL_DisplayMode &mode);
+  void setFullscreen(const bool &fullscreen);
+  bool isFullscreen();
 
-    void setDisplayMode(SDL_DisplayMode &mode);
-    void setFullscreen(const bool& fullscreen);
-    bool isFullscreen();
-
-    void clearViewport(const float& r,const float& g,const float& b,const float& a);
-    void swapWindow();
-
-
+  void clearViewport(const float &r, const float &g, const float &b,
+                     const float &a);
+  void swapWindow();
 };
 
-
-#endif // DRAGON_SDLGL_H_INCLUDED
+#endif

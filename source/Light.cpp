@@ -1,48 +1,41 @@
 #include "../headers/Light.h"
 
-LightManager::LightManager()
-{
-    for(unsigned int i = 0;i < 64;i++)
-    {
-        mLights.position[i] = glm::vec4(0,0,0,0);
-        mLights.colour[i] = glm::vec4(0,0,0,0);
-    }
+LightManager::LightManager() {
+  for (unsigned int i = 0; i < 64; i++) {
+    lights.position[i] = glm::vec4(0, 0, 0, 0);
+    lights.colour[i] = glm::vec4(0, 0, 0, 0);
+  }
 }
 
-LightManager::~LightManager()
-{
-    for(unsigned int i = 0;i < 64;i++)
-    {
-        mLights.position[i] = glm::vec4(0,0,0,0);
-        mLights.colour[i] = glm::vec4(0,0,0,0);
-    }
+LightManager::~LightManager() {
+  for (unsigned int i = 0; i < 64; i++) {
+    lights.position[i] = glm::vec4(0, 0, 0, 0);
+    lights.colour[i] = glm::vec4(0, 0, 0, 0);
+  }
 }
 
-void LightManager::getLights(std::list<Light>& lights)
-{
+void LightManager::get_lights(std::list<Light> &light_list) {
 
-    for(auto& light: lights)
-    {
-        if(mLightCount > 63)
-        {
-            break;
-        }
-
-        mLights.position[mLightCount+1] = light.position;
-        mLights.colour[mLightCount+1] = light.colour;
-        mLightCount++;
+  for (auto &light : light_list) {
+    if (light_count > 63) {
+      break;
     }
-    lights.clear();
+
+    lights.position[light_count + 1] = light.position;
+    lights.colour[light_count + 1] = light.colour;
+    light_count++;
+  }
+  light_list.clear();
 }
 
-void LightManager::uploadData()
-{
-    mLights.colour[0].w = mLightCount+1;
-    glBufferSubData(GL_UNIFORM_BUFFER,0,sizeof(LightBlock),&mLights);
-    if(mLightCount > 0)
-    {
-        std::fill(mLights.position.begin()+1,mLights.position.begin()+mLightCount+1,glm::vec4(0,0,0,0));
-        std::fill(mLights.colour.begin()+1,mLights.colour.begin()+mLightCount+1,glm::vec4(0,0,0,0));
-        mLightCount = 0;
-    }
+void LightManager::upload_data() {
+  lights.colour[0].w = light_count + 1;
+  glBufferSubData(GL_UNIFORM_BUFFER, 0, sizeof(LightBlock), &lights);
+  if (light_count > 0) {
+    std::fill(lights.position.begin() + 1,
+              lights.position.begin() + light_count + 1, glm::vec4(0, 0, 0, 0));
+    std::fill(lights.colour.begin() + 1,
+              lights.colour.begin() + light_count + 1, glm::vec4(0, 0, 0, 0));
+    light_count = 0;
+  }
 }

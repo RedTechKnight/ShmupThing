@@ -1,53 +1,44 @@
 #include "../headers/Player.h"
 
-Player::Player() : Ship(),mFireDelay(200),mHitFlash(0),mHitFlashLength(400)
-{
-    mBoundingBox.center = glm::vec3(mPosition);
-    mBoundingBox.size = glm::vec3(2,2,1);
-    mHealth = 1;
-    mType = Type::Player;
-
+Player::Player() : Ship(), fire_delay(200), hit_flash(0), hit_flash_length(400) {
+  bounding_box.center = glm::vec3(position);
+  bounding_box.size = glm::vec3(2, 2, 1);
+  health = 1;
+  type = Type::Player;
 }
 
-Player::~Player()
-{
+Player::~Player() {}
 
+void Player::update(const unsigned int &delta) {
+  bounding_box.center = position;
+  next_fire -= delta;
+  if (hit_flash > 0) {
+    hit_flash -=
+        static_cast<float>(delta) / static_cast<float>(hit_flash_length);
+  }
 }
 
-void Player::update(const unsigned int& delta)
-{
-    mBoundingBox.center = mPosition;
-    mNextFire -= delta;
-    if(mHitFlash > 0)
-    {
-        mHitFlash -= static_cast<float>(delta)/static_cast<float>(mHitFlashLength);
-    }
+void Player::fire() {
+  if (next_fire <= 0) {
+    BoundingBox bb;
+    bb.size = glm::vec3(.5, .5, 1);
+    bb.center = position;
+    ProjectileFireEvent proj;
+    proj.bounds = bb;
+    proj.position = position;
+    proj.velocity = glm::vec3(0, 0.4f, 0);
+    proj.type = type;
+    proj.damage = 30;
+    proj.model_id = 45;
+    proj.sound_effect_id = 15;
+    fire_events.push_back(proj);
+    next_fire = fire_delay;
+  }
 }
 
-void Player::fire()
-{
-    if(mNextFire <= 0)
-    {
-        boundingBox bb;
-        bb.size = glm::vec3(.5,.5,1);
-        bb.center = mPosition;
-        ProjectileFireEvent proj;
-        proj.bounds = bb;
-        proj.position = mPosition;
-        proj.velocity = glm::vec3(0,0.4f,0);
-        proj.type = mType;
-        proj.damage = 30;
-        proj.modelID = 45;
-        proj.soundEffectID = 15;
-        mFireEvents.push_back(proj);
-        mNextFire = mFireDelay;
-    }
-}
-
-void Player::hit()
-{
-    mHitFlash = 1;
-    HitEvent hitevnt;
-    hitevnt.hitEffectID = 5;
-    mHitEvents.push_back(hitevnt);
+void Player::hit() {
+  hit_flash = 1;
+  HitEvent hitevnt;
+  hitevnt.hit_effect_id = 5;
+  hit_events.push_back(hitevnt);
 }

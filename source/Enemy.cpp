@@ -1,115 +1,90 @@
 #include "../headers/Enemy.h"
 
-Enemy::Enemy() : Ship(),mCurrentFrame(0),mCurrentFramePercentage(0.0f),mHitFlashTime(0),
-mMilliSecStep(0.01f),mScreenRelative(false),mScreenCenter(0,0,0),mPlayerLocation(0,0,0),
-mFireRate(400),mNextFire(400),mActive(false),mHitFlash(0.0f),mHitFlashLength(300)
-{
-    mType = Type::Enemy;
-    mHealth = 10;
-    mPositionFrames.clear();
-    mBoundingBox.size = glm::vec3(2,2,1);
+Enemy::Enemy()
+    : Ship(), current_frame(0), current_frame_percentage(0.0f),
+      hit_flash_time(0), milli_sec_step(0.01f), screen_relative(false),
+      screen_center(0, 0, 0), player_location(0, 0, 0), fire_rate(400),
+      next_fire(400), is_active(false), hit_flash(0.0f), hit_flash_length(300) {
+  type = Type::Enemy;
+  health = 10;
+  position_frames.clear();
+  bounding_box.size = glm::vec3(2, 2, 1);
 }
 
-Enemy::~Enemy()
-{
-    mPositionFrames.clear();
-}
+Enemy::~Enemy() { position_frames.clear(); }
 
-void Enemy::update(const unsigned int& delta)
-{
-    if(mHitFlash > 0)
-    {
-        mHitFlash = mHitFlash * (static_cast<float>(mHitFlashTime)/static_cast<float>(mHitFlashLength));
-        mHitFlashTime -= delta;
-    }
-    mNextFire -= delta;
-    if(mPositionFrames.size()>0)
-    {
-        mCurrentFramePercentage += mMilliSecStep * delta;
+void Enemy::update(const unsigned int &delta) {
+  if (hit_flash > 0) {
+    hit_flash = hit_flash * (static_cast<float>(hit_flash_time) /
+                             static_cast<float>(hit_flash_length));
+    hit_flash_time -= delta;
+  }
+  next_fire -= delta;
+  if (position_frames.size() > 0) {
+    current_frame_percentage += milli_sec_step * delta;
 
-        if(mCurrentFramePercentage > 1)
-        {
-            mCurrentFrame++;
-            mCurrentFramePercentage -= 1;
-        }
-
-        if(mCurrentFrame >= mPositionFrames.size())
-        {
-            mCurrentFrame = 0;
-        }
-        if(mPositionFrames.size() > 1)
-        {
-            if(mCurrentFrame < mPositionFrames.size()-1)
-            {
-                mPosition = mPositionFrames[mCurrentFrame] + (mPositionFrames[mCurrentFrame+1] - mPositionFrames[mCurrentFrame]) * mCurrentFramePercentage;
-            }
-            else
-            {
-                mPosition = mPositionFrames[mCurrentFrame] + (mPositionFrames[0] - mPositionFrames[mCurrentFrame]) * mCurrentFramePercentage;
-            }
-        }
-        else
-        {
-            mPosition = mPositionFrames[0];
-        }
+    if (current_frame_percentage > 1) {
+      current_frame++;
+      current_frame_percentage -= 1;
     }
 
-        if(glm::length(mMoveVel) > 0)
-        {
-            mPosition = mPosition + static_cast<float>(delta) * mMoveVel;
-        }
-        if(mPosition.x > 55)
-        {
-            mPosition.x = -54;
-        }
-        if(mPosition.x < -55)
-        {
-            mPosition.x = 54;
-        }
-        mFinalPosition = mPosition;
-        if(mScreenRelative)
-        {
-            mFinalPosition = mPosition + mScreenCenter;
-        }
-        mBoundingBox.center = mFinalPosition;
+    if (current_frame >= position_frames.size()) {
+      current_frame = 0;
+    }
+    if (position_frames.size() > 1) {
+      if (current_frame < position_frames.size() - 1) {
+        position = position_frames[current_frame] +
+                   (position_frames[current_frame + 1] -
+                    position_frames[current_frame]) *
+                       current_frame_percentage;
+      } else {
+        position = position_frames[current_frame] +
+                   (position_frames[0] - position_frames[current_frame]) *
+                       current_frame_percentage;
+      }
+    } else {
+      position = position_frames[0];
+    }
+  }
 
+  if (glm::length(move_vel) > 0) {
+    position = position + static_cast<float>(delta) * move_vel;
+  }
+  if (position.x > 55) {
+    position.x = -54;
+  }
+  if (position.x < -55) {
+    position.x = 54;
+  }
+  final_position = position;
+  if (screen_relative) {
+    final_position = position + screen_center;
+  }
+  bounding_box.center = final_position;
 
-            if(mNextFire < 0)
-            {
-                fire();
-                mNextFire = mFireRate;
-            }
-
+  if (next_fire < 0) {
+    fire();
+    next_fire = fire_rate;
+  }
 }
 
-
-void Enemy::fire()
-{
-    ProjectileFireEvent proj;
-    proj.position = mFinalPosition;
-    proj.velocity = glm::normalize(mPlayerLocation - mFinalPosition)*0.01f;
-    proj.bounds.center = mFinalPosition;
-    proj.bounds.size = glm::vec3(.5,.5,1);
-    proj.type = mType;
-    proj.modelID = 15;
-    proj.damage = 1;
-    proj.soundEffectID = 15;
-    mFireEvents.push_back(proj);
-  /*  glm::mat3 rot = glm::rotate(glm::mat4(1),glm::pi<float>()/7.5f,glm::vec3(0,0,1));
-    proj.velocity = proj.velocity * rot;
-    proj.modelID = 16;
-    mFireEvents.push_back(proj);
-    rot = glm::rotate(glm::mat4(1),-glm::pi<float>()/3.25f,glm::vec3(0,0,1));
-    proj.velocity = proj.velocity * rot;
-    proj.modelID = 17;
-    mFireEvents.push_back(proj);*/
+void Enemy::fire() {
+  ProjectileFireEvent proj;
+  proj.position = final_position;
+  proj.velocity = glm::normalize(player_location - final_position) * 0.01f;
+  proj.bounds.center = final_position;
+  proj.bounds.size = glm::vec3(.5, .5, 1);
+  proj.type = type;
+  proj.model_id = 15;
+  proj.damage = 1;
+  proj.sound_effect_id = 15;
+  fire_events.push_back(proj);
 }
 
-void Enemy::hit()
-{
-    mHitFlash = 1.0f;
-    mHitFlashTime = mHitFlashLength;
-    HitEvent hit;
-    hit.hitEffectID = 4;
-    mHitEvents.push_back(hit);
+void Enemy::hit() {
+  hit_flash = 1.0f;
+  hit_flash_time = hit_flash_length;
+  HitEvent hit;
+  hit.hit_effect_id = 4;
+  hit_events.push_back(hit);
 }

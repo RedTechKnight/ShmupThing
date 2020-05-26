@@ -1,19 +1,13 @@
 #include "../headers/collision.h"
 
-bool collision(const boundingBox& box0,const boundingBox& box1)
-{
-    glm::vec3 centerDiff = box1.center - box0.center;
-    if((box0.size.x + box1.size.x)/2.0f > glm::abs(centerDiff.x))
-    {
-        if((box0.size.y + box1.size.y)/2.0f > glm::abs(centerDiff.y))
-        {
-            if((box0.size.z + box1.size.z)/2.0f > glm::abs(centerDiff.z))
-            {
-                return true;
-            }
-            return false;
-        }
-        return false;
+bool are_colliding(const BoundingBox &a, const BoundingBox &b) {
+  glm::vec3 center_diff = b.center - a.center;
+  if ((a.size.x + b.size.x) / 2.0f > glm::abs(center_diff.x)) {
+    if ((a.size.y + b.size.y) / 2.0f > glm::abs(center_diff.y)) {
+      if ((a.size.z + b.size.z) / 2.0f > glm::abs(center_diff.z)) {
+        return true;
+      }
     }
-    return false;
+  }
+  return false;
 }

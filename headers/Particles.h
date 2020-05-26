@@ -1,70 +1,67 @@
 #ifndef PARTICLES_H_INCLUDED
 #define PARTICLES_H_INCLUDED
 
-#include <vector>
-#include <glm/glm.hpp>
-#include <glm/ext/matrix_transform.hpp>
-#include <glm/ext/scalar_constants.hpp>
-#include <glm/gtc/random.hpp>
-#include <iostream>
-#include <math.h>
-#include <random>
-#include <functional>
-#include <list>
-#include <algorithm>
 #include "GLModel.h"
 #include "GLTexture.h"
 #include "Light.h"
+#include <algorithm>
+#include <functional>
+#include <glm/ext/matrix_transform.hpp>
+#include <glm/ext/scalar_constants.hpp>
+#include <glm/glm.hpp>
+#include <glm/gtc/random.hpp>
+#include <iostream>
+#include <list>
 #include <map>
+#include <math.h>
+#include <random>
+#include <vector>
 
-struct Particle
-{
-    glm::vec3 offset;
-    glm::vec3 velocity;
-    bool active;
-    int life;
+struct Particle {
+  glm::vec3 offset;
+  glm::vec3 velocity;
+  bool active;
+  int life;
 };
 
-class ParticleSystem
-{
+class ParticleSystem {
 private:
-    int mNextEmitTime;
+  int next_emit_time;
+
 public:
-    std::list<Particle> mParticles;
-    std::array<glm::vec4,4096> mOffsets;
-    glm::vec3 mOrigin;
-    unsigned int mMaxSize;
-    unsigned int mEmitRate;
-    unsigned int mEmitInterval;
-    bool mLoop;
-    unsigned int mStartLife;
-    int mEffectLife;
-    std::function<glm::vec3()> mRandomFunction;
+  std::list<Particle> particles;
+  std::array<glm::vec4, 4096> offsets;
+  glm::vec3 origin;
+  unsigned int max_size;
+  unsigned int emit_rate;
+  unsigned int emit_interval;
+  bool is_looping;
+  unsigned int start_life;
+  int effect_life;
+  std::function<glm::vec3()> random_function;
 
-    ParticleSystem();
-    ~ParticleSystem();
+  ParticleSystem();
+  ~ParticleSystem();
 
-    void create();
-    void update(const float& delta);
-    void upload();
+  void create();
+  void update(const float &delta);
+  void upload();
 };
 
-class ParticleRenderer
-{
+class ParticleRenderer {
 private:
-
 public:
-    GLTexture mTexture;
-    std::map<unsigned int,ParticleSystem> mParticleSystems;
-    std::map<unsigned int,GLModel> mModels;
-    std::list<Light> mLights;
+  GLTexture texture;
+  std::map<unsigned int, ParticleSystem> particles_systems;
+  std::map<unsigned int, GLModel> models;
+  std::list<Light> lights;
 
-    ParticleRenderer();
-    ~ParticleRenderer();
+  ParticleRenderer();
+  ~ParticleRenderer();
 
-    void addParticleEffect(const unsigned int& ID,const ParticleSystem& system);
-    void update(const unsigned int& delta);
-    void draw();
+  void addParticleEffect(const unsigned int &ID, const ParticleSystem &system);
+  void update(const unsigned int &delta);
+  void draw();
 };
 
 #endif // PARTICLES_H_INCLUDED

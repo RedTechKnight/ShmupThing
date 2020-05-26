@@ -2,45 +2,44 @@
 #define GL_MODEL_H_INCLUDED
 #include "sdl_gl_window.h"
 #include <algorithm>
-#include <vector>
-#include <stack>
 #include <assimp/Importer.hpp>
-#include <assimp/scene.h>
 #include <assimp/postprocess.h>
+#include <assimp/scene.h>
+#include <stack>
+#include <vector>
 
-struct element
-{
-    GLenum type;
-    unsigned int num;
+struct Element {
+  GLenum type;
+  unsigned int num;
 };
-class GLModel
-{
+class GLModel {
 private:
-    std::vector<std::vector<float>> mVertices;
-    std::vector<unsigned int> mIndices;
-    std::vector<element> mVertexAttributes;
-    std::vector<GLuint> mVertexBuffers;
-    GLuint mIndexBuffer;
-    GLuint mVertexArrayObject;
-    unsigned int mVertexComponents;
+  std::vector<std::vector<float>> vertices;
+  std::vector<unsigned int> indices;
+  std::vector<Element> vertex_attributes;
+  std::vector<GLuint> vertex_buffers;
+  GLuint index_buffer;
+  GLuint vertex_array_object;
+  unsigned int vertex_components;
+
 public:
-    GLModel();
-    ~GLModel();
+  GLModel();
+  ~GLModel();
 
-    void addVertexAttribute(GLenum type,unsigned int num);
-    void addElement(float elem,unsigned int index);
-    void addVec2(float x,float y,unsigned int index);
-    void addVec3(float x,float y,float z,unsigned int index);
-    void addVec4(float x,float y,float z,float w,unsigned int index);
-    void addIndex(unsigned int index);
+  void add_vertex_attribute(GLenum type, unsigned int num);
+  void add_element(float elem, unsigned int index);
+  void add_vec_2(float x, float y, unsigned int index);
+  void add_vec_3(float x, float y, float z, unsigned int index);
+  void add_vec_4(float x, float y, float z, float w, unsigned int index);
+  void add_index(unsigned int index);
 
-    void assImpLoad(const std::string& filename,const int& postProcessingFlags);
+  void assimp_load(const std::string &filename, const int &postProcessingFlags);
 
-    void createVertexBuffers();
-    void createIndexBuffers();
+  void create_vertex_buffers();
+  void create_index_buffers();
 
-    void draw(GLenum primType,const unsigned int& instanceCount);
-    void clean();
+  void draw(GLenum primType, const unsigned int &instanceCount);
+  void clean();
 };
 
 #endif // GL_MODEL_H_INCLUDED
