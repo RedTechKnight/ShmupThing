@@ -10,7 +10,6 @@
 #include <SDL2/SDL_mixer.h>
 #include <SDL2/SDL_ttf.h>
 #include <string>
-#include "AudioSystem.h"
 #include "GLCamera.h"
 #include "ship.h"
 #include "Player.h"
@@ -18,17 +17,10 @@
 #include "Input.h"
 #include "GLModelManager.h"
 #include "GameEvent.h"
-#include "AudioSystem.h"
 #include "EnemyManager.h"
 #include "Particles.h"
 #include "Light.h"
-#include "GL2DElement.h"
-#include "Cursor.h"
 #include "GL2DElementArray.h"
-#include "GUIButton.h"
-#include "GUICheckBox.h"
-#include "GUISystem.h"
-#include "GLText.h"
 #include "GLProjectileRenderer.h"
 const float PI = glm::pi<float>();
 const unsigned int gPlayerModelID = 5;
@@ -76,18 +68,11 @@ private:
     GameEventHandler<ProjectileFireEvent> mFireEventHandler;
     GameEventHandler<HitEvent> mHitEventHandler;
     GameEventHandler<ExplosionEvent> mExplosionEventHandler;
-    MixerAudio mAudio;
     EnemyManager mEnemyManager;
     ParticleRenderer mParticleRenderer;
     Viewport mViewport;
     LightManager mLightManager;
-    GL2DElement mCursorImage;
-    GUICursor mCursor;
     GL2DElementArray m2DElemArray;
-    GUISystem mGUI;
-    GLTextManager mTextManager;
-    GUISystem mMenu;
-    GLTextManager mMenuText;
     GL2DElementArray mMenuImages;
     GLProjectileRenderer mPlayerProjectileRenderer;
     GLProjectileRenderer mEnemyProjectileRenderer;

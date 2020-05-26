@@ -17,7 +17,6 @@ int main()
             shmup.init();
             shmup.updateInterface(SDL_GetTicks() - lastUpdate);
             shmup.update(SDL_GetTicks() - lastUpdate);
-            shmup.renderInterface();
             shmup.render();
 
             lastUpdate = SDL_GetTicks();
