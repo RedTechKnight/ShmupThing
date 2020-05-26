@@ -23,9 +23,7 @@ src_files = ['Source/main.cpp',
 
 glew = dependency('glew')
 sdl2 = dependency('sdl2')
-sdlttf = dependency('SDL2_ttf')
-sdlmixer = dependency('SDL2_mixer')
 assimp = dependency('assimp')
 fi = compiler.find_library('freeimage')
 
-executable ('shmup',src_files,dependencies: [glew,sdl2,sdlttf,sdlmixer,assimp,fi])
+executable ('shmup',src_files,dependencies: [glew,sdl2,assimp,fi])

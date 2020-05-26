@@ -14,7 +14,6 @@ GLWindow::~GLWindow()
     mWindow = nullptr;
 
     SDL_GL_DeleteContext(mGLContext);
-    TTF_Quit();
     SDL_Quit();
 }
 
@@ -25,12 +24,6 @@ bool GLWindow::createWindow(std::string name,uint32_t width,uint32_t height,uint
         std::cout << "Failed to initialise SDL!"<<std::endl;
         return false;
     }
-    if(TTF_Init() < 0)
-    {
-        std::cout<<"Failed to initialise the font subsystem!"<<std::endl;
-        return false;
-    }
-    SDL_ShowCursor(SDL_DISABLE);
     mWindowWidth = width;
     mWindowHeight = height;
     mWindowName = name;

@@ -8,7 +8,6 @@
 #include <map>
 #include <vector>
 #include <iostream>
-#include <SDL2/SDL_ttf.h>
 
 class GLWindow
 {
