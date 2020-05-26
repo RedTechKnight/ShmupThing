@@ -1,4 +1,4 @@
-#include "GL2DElementArray.h"
+#include "../headers/GL2DElementArray.h"
 
 GL2DElementArray::GL2DElementArray() : mTextureArray(0),mVertexBuffer(0),mVertexArrayObject(0),
 mElementCount(0),mImageRectsChanged(false),

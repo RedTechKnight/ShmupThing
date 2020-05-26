@@ -1,4 +1,4 @@
-#include "GLProjectileRenderer.h"
+#include "../headers/GLProjectileRenderer.h"
 
 GLProjectileRenderer::GLProjectileRenderer() : mTexture(GLTexture()),mModel(GLModel())
 {

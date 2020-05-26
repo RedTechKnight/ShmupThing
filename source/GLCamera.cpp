@@ -1,4 +1,4 @@
-#include "GLCamera.h"
+#include "../headers/GLCamera.h"
 
 Camera::Camera() : mViewMat(glm::mat4()),mProjectionMat(glm::mat4()),mUpright(1),
 mRightVec(1,0,0),mUpVec(0,1,0),mLookAtVec(0,0,1),mEyePos(0,0,0),mTarget(0,0,0),mOrientationUpdated(false),mFollowTarget(false)

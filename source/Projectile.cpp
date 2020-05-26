@@ -1,4 +1,4 @@
-#include "Projectile.h"
+#include "../headers/Projectile.h"
 
 ProjectileManager::ProjectileManager()
 {

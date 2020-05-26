@@ -1,4 +1,4 @@
-#include "Light.h"
+#include "../headers/Light.h"
 
 LightManager::LightManager()
 {

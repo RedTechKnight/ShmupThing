@@ -1,4 +1,4 @@
-#include "collision.h"
+#include "../headers/collision.h"
 
 bool collision(const boundingBox& box0,const boundingBox& box1)
 {

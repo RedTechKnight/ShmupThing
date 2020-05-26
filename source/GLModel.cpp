@@ -1,4 +1,4 @@
-#include "GLModel.h"
+#include "../headers/GLModel.h"
 
 GLModel::GLModel()
 {

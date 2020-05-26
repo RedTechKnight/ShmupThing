@@ -1,4 +1,4 @@
-#include "GLTexture.h"
+#include "../headers/GLTexture.h"
 
 GLTexture::GLTexture()
 {

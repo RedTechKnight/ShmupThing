@@ -1,4 +1,4 @@
-#include "sdl_gl_window.h"
+#include "../headers/sdl_gl_window.h"
 
 GLWindow::GLWindow() : mWindowName(" "),mWindowHeight(0),mWindowWidth(0),mGLMinorVer(0),mGLMajorVer(0),mFullscreen(false)
 {

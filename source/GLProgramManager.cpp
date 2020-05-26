@@ -1,4 +1,4 @@
-#include "GLProgramManager.h"
+#include "../headers/GLProgramManager.h"
 
 GLProgramManager::GLProgramManager() : mLastUniformBindPoint(0)
 {

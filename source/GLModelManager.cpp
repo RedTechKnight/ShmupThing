@@ -1,4 +1,4 @@
-#include "GLModelManager.h"
+#include "../headers/GLModelManager.h"
 
 GLModelManager::GLModelManager()
 {

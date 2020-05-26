@@ -1,4 +1,4 @@
-#include "Enemy.h"
+#include "../headers/Enemy.h"
 
 Enemy::Enemy() : Ship(),mCurrentFrame(0),mCurrentFramePercentage(0.0f),mHitFlashTime(0),
 mMilliSecStep(0.01f),mScreenRelative(false),mScreenCenter(0,0,0),mPlayerLocation(0,0,0),

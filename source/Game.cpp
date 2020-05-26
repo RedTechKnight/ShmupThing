@@ -1,4 +1,4 @@
-#include "Game.h"
+#include "../headers/Game.h"
 Game::Game() : mWindow(GLWindow()), mShaderProgramManager(GLProgramManager()),  mMainCamera(Camera()),
  mInput(InputHandler()), mModelManager(GLModelManager()),
 mTotalTime(0),  mCamTarget(0,0,0), mPlayer(Player()),

@@ -1,4 +1,4 @@
-#include "Player.h"
+#include "../headers/Player.h"
 
 Player::Player() : Ship(),mFireDelay(200),mHitFlash(0),mHitFlashLength(400)
 {

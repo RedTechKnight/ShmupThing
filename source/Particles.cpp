@@ -1,4 +1,4 @@
-#include "Particles.h"
+#include "../headers/Particles.h"
 
 ParticleSystem::ParticleSystem() : mNextEmitTime(0),mOrigin(0,0,0),mMaxSize(0),mEmitRate(0),mEmitInterval(0),
                                     mLoop(false),mStartLife(0)
