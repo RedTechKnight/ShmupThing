@@ -1,2 +1,2 @@
-model ../Assets/ship.fbx 05
-model ../Assets/enemy.fbx 10
+model Assets/ship.fbx 05
+model Assets/enemy.fbx 10

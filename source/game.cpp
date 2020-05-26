@@ -23,30 +23,21 @@ void Game::start() {
       return;
     }
     glEnable(GL_TEXTURE_3D);
-    shader_program_manager.create_program(TextProgramID);
-    shader_program_manager.load_shader("../Assets/textVertex.glsl",
-                                       GL_VERTEX_SHADER, TextProgramID);
-    shader_program_manager.load_shader("../Assets/textGeometry.glsl",
-                                       GL_GEOMETRY_SHADER, TextProgramID);
-    shader_program_manager.load_shader("../Assets/textFragment.glsl",
-                                       GL_FRAGMENT_SHADER, TextProgramID);
-    shader_program_manager.link_program(TextProgramID);
-
     shader_program_manager.create_program(ImageProgramID);
-    shader_program_manager.load_shader("../Assets/2delemvertex.glsl",
+    shader_program_manager.load_shader("Assets/2delemvertex.glsl",
                                        GL_VERTEX_SHADER, ImageProgramID);
-    shader_program_manager.load_shader("../Assets/2delemgeometry.glsl",
+    shader_program_manager.load_shader("Assets/2delemgeometry.glsl",
                                        GL_GEOMETRY_SHADER, ImageProgramID);
-    shader_program_manager.load_shader("../Assets/2delemfragment.glsl",
+    shader_program_manager.load_shader("Assets/2delemfragment.glsl",
                                        GL_FRAGMENT_SHADER, ImageProgramID);
     shader_program_manager.link_program(ImageProgramID);
 
     shader_program_manager.create_program(ImageArrayProgramID);
-    shader_program_manager.load_shader("../Assets/2delemarrayvertex.glsl",
+    shader_program_manager.load_shader("Assets/2delemarrayvertex.glsl",
                                        GL_VERTEX_SHADER, ImageArrayProgramID);
-    shader_program_manager.load_shader("../Assets/2delemarraygeometry.glsl",
+    shader_program_manager.load_shader("Assets/2delemarraygeometry.glsl",
                                        GL_GEOMETRY_SHADER, ImageArrayProgramID);
-    shader_program_manager.load_shader("../Assets/2delemarrayfragment.glsl",
+    shader_program_manager.load_shader("Assets/2delemarrayfragment.glsl",
                                        GL_FRAGMENT_SHADER, ImageArrayProgramID);
     shader_program_manager.link_program(ImageArrayProgramID);
 
@@ -54,21 +45,14 @@ void Game::start() {
 
     shader_program_manager.get_uniform("uTexture", ImageProgramID,
                                        ImageProgramSamplerID);
-    shader_program_manager.get_uniform("uTextArray", TextProgramID,
-                                       TextProgramSamplerID);
     shader_program_manager.get_uniform("uTexture", ImageArrayProgramID,
                                        ImageArrayProgramID);
 
-    shader_program_manager.create_uniform_block(TextProgramID, "TextParamList",
-                                                TextProgramUniformBlockID);
     shader_program_manager.create_uniform_block(
         ImageArrayProgramID, "Rects", ImageArrayProgramUniformBlockID);
     shader_program_manager.create_uniform_block(ImageProgramID, "ImageRect",
                                                 ImageProgramUniformBlockID);
 
-    shader_program_manager.bind_uniform_block(TextProgramUniformBlockID);
-    glBufferData(GL_UNIFORM_BUFFER, sizeof(float) * 220, nullptr,
-                 GL_DYNAMIC_DRAW);
 
     shader_program_manager.bind_uniform_block(ImageArrayProgramUniformBlockID);
     glBufferData(GL_UNIFORM_BUFFER, sizeof(float) * 180, nullptr,
@@ -115,21 +99,21 @@ void Game::init() {
     viewport.view = main_camera.get_view_matrix();
     viewport.projection = main_camera.get_projection_matrix();
 
-    model_manager.batch_load("../Assets/models.txt");
+    model_manager.batch_load("Assets/models.txt");
 
     shader_program_manager.create_program(DefaultProgramID);
-    shader_program_manager.load_shader("../Assets/defaultVertex.glsl",
+    shader_program_manager.load_shader("Assets/defaultVertex.glsl",
                                        GL_VERTEX_SHADER, DefaultProgramID);
-    shader_program_manager.load_shader("../Assets/defaultFragment.glsl",
+    shader_program_manager.load_shader("Assets/defaultFragment.glsl",
                                        GL_FRAGMENT_SHADER, DefaultProgramID);
     shader_program_manager.link_program(DefaultProgramID);
 
     shader_program_manager.create_program(ParticleProgramID);
-    shader_program_manager.load_shader("../Assets/particlesVertex.glsl",
+    shader_program_manager.load_shader("Assets/particlesVertex.glsl",
                                        GL_VERTEX_SHADER, ParticleProgramID);
-    shader_program_manager.load_shader("../Assets/particlesGeometry.glsl",
+    shader_program_manager.load_shader("Assets/particlesGeometry.glsl",
                                        GL_GEOMETRY_SHADER, ParticleProgramID);
-    shader_program_manager.load_shader("../Assets/particlesFragment.glsl",
+    shader_program_manager.load_shader("Assets/particlesFragment.glsl",
                                        GL_FRAGMENT_SHADER, ParticleProgramID);
     shader_program_manager.link_program(ParticleProgramID);
 
@@ -186,14 +170,14 @@ void Game::init() {
     projectile_manager.x_bounds = 60;
     projectile_manager.y_bounds = 60;
 
-    particle_renderer.texture.load_from_file("../Assets/explosion_effect.png",
+    particle_renderer.texture.load_from_file("Assets/explosion_effect.png",
                                              0);
     player_projectile_renderer.init();
-    player_projectile_renderer.texture.load_from_file("../Assets/plasma.png",
+    player_projectile_renderer.texture.load_from_file("Assets/plasma.png",
                                                       0);
     enemy_projectile_renderer.init();
     enemy_projectile_renderer.texture.load_from_file(
-        "../Assets/enemy_blast.png", 0);
+        "Assets/enemy_blast.png", 0);
 
     Enemy enemy;
     enemy.bounding_box = BoundingBox{glm::vec3(0, 0, 0), glm::vec3(2, 2, 2)};
